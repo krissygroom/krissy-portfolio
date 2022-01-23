@@ -1,0 +1,142 @@
+/* ********************************* */
+/* HEADER */
+/* ********************************* */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 12.8rem;
+    justify-content: space-between;
+    padding: 2.4rem 12.8rem;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo {
+    font-family: 'Festive', cursive;
+    font-size: 7.4rem;
+    color: #ffca69;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+/* ********************************* */
+/* NAVIGATION */
+/* ********************************* */
+
+.main-nav-list {
+    display: flex;
+    gap: 16rem;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: lowercase;
+}
+
+.main-nav-link {
+    color: #262627;
+}
+
+.main-nav-link:hover {
+    border-bottom: 2px solid #b83978;
+    color: #b83978;
+}
+
+.main-nav-link.selected-page {
+    color: #b83978;
+    cursor: default;
+    border-bottom: none;
+  }
+
+
+/* ********************************* */
+/* MAIN PORTFOLIO SECTION */
+/* ********************************* */
+
+.landing-page {
+    width: 100%;
+    /* display: grid; */
+    grid-template-columns: 30% 1fr;
+    padding-left: 12.8rem;
+    gap: 12.8rem;
+    position: relative;
+}
+
+/* Intro Column */
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    position: sticky;
+    top: 20%;
+}
+
+.intro-img {
+    height: 65%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.name {
+    font-weight: 600;
+}
+
+
+.intro-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+}
+
+
+/* Projects Column */
+.projects-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-text {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    color: rgba(38, 38, 39, .5);
+}
+
+.project {
+    height: 80vh;
+}
+
+.project-1 {
+    background-color: #6ab0dd;
+}
+.project-2 {
+    background-color: #548e98;
+}
+.project-3 {
+    background-color: #ffca69;
+}
+.project-4 {
+    background-color: #b83978;
+}
+
+
+
+
+
+
+
+
+
+
