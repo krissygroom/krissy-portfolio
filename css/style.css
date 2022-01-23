@@ -58,27 +58,29 @@
 
 .landing-page {
     width: 100%;
-    /* display: grid; */
     grid-template-columns: 30% 1fr;
     padding-left: 12.8rem;
     gap: 12.8rem;
     position: relative;
 }
 
-/* Intro Column */
+
+/******* INTRO COLUMN *******/
+
 .intro-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 75vh;
+    gap: 2.4rem;
+    height: 80vh;
     position: sticky;
     top: 20%;
 }
 
 .intro-img {
-    height: 65%;
-    width: auto;
+    height: 45%;
+    align-self: center;
     border-radius: 50%;
+    margin: 3.2rem 0;
 }
 
 .intro-text {
@@ -92,17 +94,20 @@
     font-weight: 600;
 }
 
-
-.intro-text ul {
+.social-links {
     display: flex;
-    flex-direction: column;
     gap: 1.2rem;
-    padding: 1.2rem;
-    font-size: 1.4rem;
+
+}
+.social-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    color: #ffca69;
 }
 
 
-/* Projects Column */
+/******* PROJECTS COLUMN *******/
+
 .projects-box {
     display: flex;
     flex-direction: column;
@@ -118,25 +123,82 @@
     height: 80vh;
 }
 
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    height: 100%;
+}
+
+.project-img {
+    height: 45rem;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.project-img:hover,
+.project-img:active {
+    transform: translateY(-2px) scale(1.05);
+    filter: none;
+    opacity: 1;
+}
+
+.project-img:active {
+    transform: translateY(1px) scale(1.02);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.8rem; 
+    font-weight: 500;
+    color: #ffca69;
+    text-transform: lowercase;
+    letter-spacing: 0.1rem;
+
+    cursor: pointer;
+    font-family: 'Festive', cursive;
+    border: none;
+
+    /* animate link and hover states */
+    transition: all 0.1s;
+}
+
+.btn:hover {
+    border-bottom: 1px solid #ffca69;
+    transform: scale(1.1);
+}
+
+.btn.btn--pink,
+.btn.btn--pink:link,
+.btn.btn--pink,visited {
+    color: #b83978;
+}
+
+.btn.btn--pink:hover {
+    color: #b83978;
+    border-bottom: 1px solid #b83978;
+
+}
+
+
 .project-1 {
     background-color: #6ab0dd;
 }
 .project-2 {
     background-color: #548e98;
 }
-.project-3 {
+.project-3,
+.project-5 {
     background-color: #ffca69;
 }
 .project-4 {
     background-color: #b83978;
 }
-
-
-
-
-
-
-
-
 
 

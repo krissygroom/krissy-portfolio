@@ -131,7 +131,7 @@ ul {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .margin-bottom-med {
@@ -148,6 +148,8 @@ p {
   color: #ffca69;
   font-weight: 700;
   text-transform: lowercase;
+  line-height: 1;
+  letter-spacing: 0.1rem;
 }
 
 .heading-secondary {
