@@ -7,17 +7,18 @@
     align-items: center;
     height: 12.8rem;
     justify-content: space-between;
-    padding: 2.4rem 12.8rem;
+    padding: 1.8rem 9.6rem;
     position: sticky;
     top: 0; 
     z-index: 1;
-    background-color: #fff;
+    background-color: hsla(0, 0%, 100%, 0.6);
 }
 
 .logo {
     font-family: 'Festive', cursive;
-    font-size: 7.4rem;
-    color: #ffca69;
+    font-size: 8.2rem;
+    color: #ffc458;
+    letter-spacing: 1.5px;
     text-transform: lowercase;
     font-weight: 600;
 }
@@ -58,29 +59,35 @@
 
 .landing-page {
     width: 100%;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 28% 1fr;
     padding-left: 12.8rem;
-    gap: 12.8rem;
+    gap: 9.6rem;
     position: relative;
 }
 
 
 /******* INTRO COLUMN *******/
 
-.intro-box {
+.intro-col {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    height: 80vh;
+    height: 75vh;
     position: sticky;
     top: 20%;
 }
 
 .intro-img {
-    height: 45%;
+    width: 100%;
     align-self: center;
     border-radius: 50%;
-    margin: 3.2rem 0;
+    margin: 2.4rem 0 3.2rem 0;
+
+    transition: all .2s;
+}
+
+.intro-img:hover {
+    transform: scale(1.1);
 }
 
 .intro-text {
@@ -108,7 +115,7 @@
 
 /******* PROJECTS COLUMN *******/
 
-.projects-box {
+.projects-col {
     display: flex;
     flex-direction: column;
 }
@@ -120,28 +127,36 @@
 }
 
 .project {
-    height: 80vh;
+    height: 75vh;
+    overflow: hidden;
 }
 
-.img-container {
+.project-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 1.6rem;
     height: 100%;
 }
 
+/* Was getting a bug with the anchor & img
+so added this styling */
+.img-anchor {
+    width: 25%;
+}
+
 .project-img {
-    height: 45rem;
+    width: 100%;
     filter: grayscale(100%);
     opacity: 0.5;
     transition: all 0.2s;
+    margin: 0;
 }
 
 .project-img:hover,
 .project-img:active {
-    transform: translateY(-2px) scale(1.05);
+    transform: translateY(-2px) scale(1.1);
     filter: none;
     opacity: 1;
 }
@@ -155,7 +170,7 @@
 .btn:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 2.8rem; 
+    font-size: 3.2rem; 
     font-weight: 500;
     color: #ffca69;
     text-transform: lowercase;
@@ -201,4 +216,36 @@
     background-color: #b83978;
 }
 
+
+
+/* ********************************* */
+/* MEDIA QUERIES */
+/* ********************************* */
+
+@media (min-width: 125em) {
+    .logo {
+        font-size: 8.6rem;
+    }
+
+    .intro-img {
+        width: 75%;
+    }
+    
+    .img-anchor {
+        width: 20%;
+    }
+
+    .landing-page {
+        grid-template-columns: 33% 1fr;
+    }
+}
+@media (min-width: 185em) {  
+    .intro-col {
+        gap: 0;
+    }
+    
+    .img-anchor {
+        width: 15%;
+    }
+}
 
