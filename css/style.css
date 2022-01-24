@@ -5,9 +5,9 @@
 .header {
     display: flex;
     align-items: center;
-    height: 12.8rem;
+    /* height: 12.8rem; */
     justify-content: space-between;
-    padding: 1.8rem 8.6rem;
+    padding: 1.2rem 6.4rem;
     position: sticky;
     top: 0; 
     z-index: 1;
@@ -37,6 +37,7 @@
 }
 
 .main-nav-link {
+    display: inline-block;
     color: #262627;
 }
 
@@ -59,8 +60,8 @@
 .landing-page {
     width: 100%;
     grid-template-columns: 28% 1fr;
-    padding-left: 8.6rem;
-    gap: 8.6rem;
+    padding-left: 6.4rem;
+    gap: 6.4rem;
     position: relative;
 }
 
@@ -70,14 +71,14 @@
 .intro-col {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 2.8rem;
     height: 75vh;
     position: sticky;
     top: 20%;
 }
 
 .intro-img {
-    width: 95%;
+    width: 90%;
     align-self: center;
     border-radius: 50%;
 
@@ -91,9 +92,7 @@
 .intro-text {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
     align-items: center;
-    margin-top: 1.2rem;
 }
 
 .name {
@@ -102,13 +101,18 @@
 
 .social-links {
     display: flex;
-    gap: 1.2rem;
+    gap: 1.8rem;
+    margin-top: 1rem;
 
 }
 .social-icon {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 2.4rem;
+    width: 2.4rem;
     color: #ffca69;
+}
+
+.social-icon:hover {
+    filter: brightness(.9);
 }
 
 
@@ -135,12 +139,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    gap: 1.2rem;
     height: 100%;
+    /* position so X is in upper rt corner when
+    description is open */
+    position: relative;
 }
 
-/* Was getting a bug with the anchor & img
-so added this styling */
+/* Getting a bug with the anchor & img
+so added this styling to <a>*/
 .img-anchor {
     width: 25%;
 }
@@ -217,9 +224,68 @@ so added this styling */
 }
 
 
+/******* PROJECTS COLUMN - DESCRIPTION BUTTON PRESSED *******/
+.description {
+    display: flex;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+
+    overflow: hidden;
+    align-items: flex-start;
+    padding-left: 30rem;
+
+
+    /* make the image much smaller and add description text w/js */
+    /* - see github project for hints at this 
+    - add hidden to header when this is open as well
+    - add an X in top right corner to click on and return to home
+    (delete no-scroll, remove .description, and .sm-img*/
+}
+
+.sm-img {
+    width: 15%;
+}
+
+/* stop scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+
+.btn-description-opened {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: inherit;
+    border: none;
+    font-size: 5.2rem;
+    height: 5.2rem;
+    width: 5.2rem;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    /* move all shared btn properties to general and 
+    change classes for specific buttons as needed */
+}
+
+.btn-description-opened:hover {
+    transform: scale(1.3);
+    /* outline-offset: 2px; */
+}
+
+
+
 
 /* ********************************* */
-/* MEDIA QUERIES */
+/* MEDIA QUERIES - TODO: add to queries.css */
 /* ********************************* */
 
 /* $bp-small: 48em; // 768px
