@@ -44,13 +44,13 @@
 <body>
 
   <!-- Header Section -->
-  <header class="header container-lg">
+  <header class="header flex flex--center">
     <a href="#">
       <p class="logo">krissy carr groom</p>
     </a>
 
     <nav class="main-nav">
-      <ul class="main-nav-list">
+      <ul class="main-nav-list flex flex--center">
         <li><a class="main-nav-link selected-page" href="#">Portfolio</a></li>
         <li><a class="main-nav-link" href="#">About</a></li>
         <li><a class="main-nav-link" href="#">Contact</a></li>
@@ -61,30 +61,28 @@
   <!-- MAIN PORTFOLIO SECTION -->
   <main>
     <section class="main-section">
-      <div class="landing-page grid grid-2-cols">
+      <div class="home-page grid grid-2-cols">
 
         <!-- Intro & Image Column -->
-        <section class="intro-col">
+        <section class="intro-col flex">
           <img class="intro-img" src="img/GroomGirlsEncinitas-min.jpg" alt="Krissy Family Picture">
-
-          <div class="intro-text">
-            <div class="container-intro">
-              <h1 class="heading heading-primary margin-bottom-med">A little bit about me</h1>
-              <p class="intro-p">Hi!  I'm <span class="color-pink name">Krissy</span> - a Front End Developer with a background in Data Science and AI.  I'm most passionate about <span class="color-pink">beautiful design</span>, <span class="color-pink">responsibile tech</span>, & <span class="color-pink">UX/HX</span>.</p>  
-              
-              <ul class="social-links">
-                <li><a class="footer-link" href="https://github.com/krissygroom" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
-                <li><a class="footer-link" href="https://www.linkedin.com/in/krissydgroom/" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
-              </ul>
-            </div>
+      
+          <div class="container-intro">
+            <h1 class="heading heading--primary margin-bottom-med">A little bit about me</h1>
+            <p class="intro-p">Hi!  I'm <span class="color-pink name">Krissy</span> - a Front End Developer with a background in Data Science and AI.  I'm most passionate about <span class="color-pink">beautiful design</span>, <span class="color-pink">responsibile tech</span>, & <span class="color-pink">UX/HX</span>.</p>  
+            
+            <ul class="social-links flex">
+              <li><a class="footer-link" href="https://github.com/krissygroom" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
+              <li><a class="footer-link" href="https://www.linkedin.com/in/krissydgroom/" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
+            </ul>
           </div>
 
         </section>
            
         <!-- Projects Column -->
-        <section class="projects-col">
+        <section class="projects-col flex">
           <div class="project project-1">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -92,15 +90,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -120,7 +118,7 @@
           </div>
 
           <div class="project project-2">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -128,15 +126,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -158,7 +156,7 @@
           </div>
 
           <div class="project project-3">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -166,15 +164,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -196,7 +194,7 @@
           </div>
 
           <div class="project project-4">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -204,15 +202,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -234,7 +232,7 @@
           </div>
           
           <div class="project project-5">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -242,15 +240,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -272,7 +270,7 @@
           </div>
 
           <div class="project project-6">
-            <div class="project-container">
+            <div class="project-container flex flex--center">
 
               <!-- X when description is opened -->
               <button class="btn-close hidden">
@@ -280,15 +278,15 @@
               </button>
 
               <!-- description of project section -->
-              <figure class="project-description hidden">
+              <figure class="project-description grid hidden">
                 <div
                   class="desc-img-box"
                   role="img"
                   aria-label="GitHub Repo Gallery">
                 </div>
 
-                <div class="description-box">
-                  <h4 class="heading-tertiary">GitHub Repo Gallery</h4>
+                <div class="description-box flex">
+                  <h4 class="heading heading--secondary">GitHub Repo Gallery</h4>
                   <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
                   </p>
                   <p><span>Skills: </span>React, JSX, Components</p>
@@ -316,6 +314,8 @@
     </section>
   </main>
 
+  <!-- <footer class="footer">Hi I'm a footer</footer>
+ -->
 
 
 

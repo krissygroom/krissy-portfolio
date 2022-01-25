@@ -3,9 +3,6 @@
 /* ********************************* */
 
 .header {
-    display: flex;
-    align-items: center;
-    /* height: 12.8rem; */
     justify-content: space-between;
     padding: 1.2rem 6.4rem;
     position: sticky;
@@ -27,9 +24,7 @@
 /* ********************************* */
 
 .main-nav-list {
-    display: flex;
     gap: 12.8rem;
-    align-items: center;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -57,7 +52,7 @@
 /* MAIN PORTFOLIO SECTION */
 /* ********************************* */
 
-.landing-page {
+.home-page {
     width: 100%;
     grid-template-columns: 28% 1fr;
     padding-left: 6.4rem;
@@ -71,7 +66,6 @@
 /******* INTRO COLUMN *******/
 
 .intro-col {
-    display: flex;
     flex-direction: column;
     gap: 2.8rem;
     height: 75vh;
@@ -91,18 +85,11 @@
     transform: scale(1.05);
 }
 
-.intro-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .name {
     font-weight: 600;
 }
 
 .social-links {
-    display: flex;
     gap: 1.8rem;
     margin-top: 1rem;
 
@@ -121,7 +108,6 @@
 /******* PROJECTS COLUMN *******/
 
 .projects-col {
-    display: flex;
     flex-direction: column;
 }
 
@@ -137,9 +123,7 @@
 }
 
 .project-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 1.2rem;
     height: 100%;
@@ -149,7 +133,7 @@
 }
 
 /* Getting a bug with the anchor & img
-so added this styling to <a>*/
+so added this styling to <a> */
 .img-anchor {
     width: 25%;
 }
@@ -238,7 +222,7 @@ so added this styling to <a>*/
     overflow: hidden;
 }
 
-/* stop scrolling (add to body when .description is open */
+/* stop scrolling (add to body when .description is open) */
 .no-scroll {
     overflow: hidden;
 }
@@ -265,7 +249,6 @@ so added this styling to <a>*/
 }
 
 .project-description {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255);
@@ -285,7 +268,6 @@ so added this styling to <a>*/
 }
 
 .description-box {
-    display: flex;
     flex-direction: column;
     gap: 2.8rem;
     padding: 3.6rem;
@@ -299,5 +281,10 @@ so added this styling to <a>*/
 }
 
 
+/******* FOOTER *******/
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.041);
+}
 
 

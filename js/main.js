@@ -11,7 +11,6 @@ const openDescription = (element, desc, closeBtn, projBtn, projDesc) => {
     element.classList.add("description");
     body.classList.add("no-scroll"); 
     window.scrollTo(0, 0);
-
     projBtn.classList.add("hidden");
     desc.classList.add("hidden");
     closeBtn.classList.remove("hidden");
@@ -22,7 +21,6 @@ const openDescription = (element, desc, closeBtn, projBtn, projDesc) => {
 // Close Description
 const closeDescription = (element, desc, closeBtn, projBtn, projDesc) => {
     element.classList.remove("description");
-
     closeBtn.classList.add("hidden");
     projBtn.classList.remove("hidden");
     desc.classList.remove("hidden");
@@ -40,6 +38,12 @@ projects.addEventListener('click', function(e) {
     const currentNode = desc.parentNode;
 
     if (desc.matches("h2")) {
+        // add .open to projects-col to check if description is open later
+        
+        if (!projects.classList.contains("open")) {
+            projects.classList.add("open");
+        }
+
         // get elements to toggle
         const closeButton = currentNode.querySelector(".btn-close");
         const projectImage = currentNode.querySelector(".project-img");
@@ -51,6 +55,11 @@ projects.addEventListener('click', function(e) {
         // Close description section if x is clicked
         closeButton.addEventListener("click", function(e) {
             closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+
+            // remove open class from projects-col when closing description
+            if (projects.classList.contains("open")) {
+                projects.classList.remove("open");
+            }
         })
     } else if (body.classList.contains("no-scroll")) {
         body.classList.remove("no-scroll");

@@ -16,20 +16,10 @@ DESIGN SETTINGS:
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights: 
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
 
 - Line heights:
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
 
 - Letter spacing:
--0.5px
-0.75px
 
 
 --- 2) COLORS ---
@@ -46,7 +36,6 @@ logo text: #ffc458
 - Accents:
 - Greys:  
 dark grey/almost black: #262627
-black: #262627
 
 --- 3) IMAGES ---
 
@@ -55,12 +44,8 @@ black: #262627
 
 
 --- 5) SHADOWS ---
-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-for darker backgrounds: box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 
 --- 6) BORDER_RADIUS ---
-Default: 8px
-Medium: 11px
 
 
 --- 7) WHITE SPACE ---
@@ -114,6 +99,13 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  align-items: center;
+}
 
 
 /* ********************************* */
@@ -141,26 +133,24 @@ p {
   margin-bottom: 1.2rem;
 }
 
-.heading-primary {
+.heading {
+  display: inline-block;
   font-family: 'Festive', cursive;
+  text-transform: lowercase;
+  letter-spacing: 0.1rem;
+}
+
+.heading--primary {
+  /* font-family: 'Festive', cursive; */
   font-size: 4.2rem;
   color: #ffc458;
   font-weight: 700;
-  text-transform: lowercase;
-  line-height: 1;
-  letter-spacing: 0.1rem;
-  margin: 0 0 1.2rem 0;
-  display: inline-block;
 }
 
-.heading-tertiary {
-  display: inline-block;
+.heading--secondary {
   font-size: 3.6rem; 
   font-weight: 600;
   color: #b83978;
-  text-transform: lowercase;
-  letter-spacing: 0.1rem;
-  font-family: 'Festive', cursive;
 }
 
 
@@ -263,6 +253,8 @@ textarea {
 .hidden,
 [hidden] {
   display: none !important;
+  visibility: hidden;
+
 }
 
 /*
