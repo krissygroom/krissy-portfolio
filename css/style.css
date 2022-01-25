@@ -43,7 +43,6 @@
 
 .main-nav-link.selected-page {
     color: #b83978;
-    cursor: default;
     border-bottom: none;
   }
 
@@ -262,9 +261,32 @@ so added this styling to <a> */
 }
 
 .desc-img-box {
-    background-image: url("../img/github.png");
     background-size: cover;
-    background-position: top; 
+    background-position: top;
+    border: 2px solid #262627; 
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.project-1 .desc-img-box {
+    background-image: url("../img/github.png");
+    background-position: top-left;
+}
+.project-2 .desc-img-box {
+    background-image: url("../img/unplugged.png");
+}
+.project-3 .desc-img-box {
+    background-image: url("../img/sticky-note.png");
+    background-position: left;
+}
+.project-4 .desc-img-box {
+    background-image: url("../img/guess.png");
+}
+.project-5 .desc-img-box {
+    background-image: url("../img/joke.png");
+}
+.project-6 .desc-img-box {
+    background-image: url("../img/omnifood.png");
 }
 
 .description-box {
