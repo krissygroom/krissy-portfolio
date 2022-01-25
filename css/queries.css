@@ -1,0 +1,51 @@
+/* ********************************* */
+/* MEDIA QUERIES - TODO: add to queries.css */
+/* ********************************* */
+
+/* $bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px x 1600
+https://css-tricks.com/optimizing-large-scale-displays/ */
+
+/* 1920×1080 (8.89%)
+1366×768 (8.44%)
+360×640 (7.28%)
+414×896 (4.58%)
+1536×864 (3.88%)
+375×667 (3.75%) */
+
+/* Large Desktop Screens */
+@media (min-width: 125em) {
+    .logo {
+        font-size: 7.4rem;
+    }
+
+    .intro-img {
+        width: 70%;
+    }
+    
+    .img-anchor {
+        width: 20%;
+    }
+
+    .landing-page {
+        grid-template-columns: 33% 1fr;
+    }
+}
+@media (min-width: 175em) {  
+    .intro-col {
+        gap: 0;
+    }
+
+    .intro-img {
+        width: 60%;
+    }
+    
+    .img-anchor {
+        width: 15%;
+    }
+}
+
+
