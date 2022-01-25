@@ -149,6 +149,8 @@ p {
   text-transform: lowercase;
   line-height: 1;
   letter-spacing: 0.1rem;
+  margin: 0 0 1.2rem 0;
+  display: inline-block;
 }
 
 .heading-secondary {
