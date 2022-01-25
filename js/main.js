@@ -5,6 +5,10 @@ const projects = document.querySelector(".projects-col");
 // Access body to stop scrolling behavior
 const body = document.querySelector("body");
 
+// Header section to close description section 
+// when links are clicked
+const header = document.querySelector(".header");
+
 
 // Open Description
 const openDescription = (element, desc, closeBtn, projBtn, projDesc) => {
@@ -38,12 +42,6 @@ projects.addEventListener('click', function(e) {
     const currentNode = desc.parentNode;
 
     if (desc.matches("h2")) {
-        // add .open to projects-col to check if description is open later
-        
-        if (!projects.classList.contains("open")) {
-            projects.classList.add("open");
-        }
-
         // get elements to toggle
         const closeButton = currentNode.querySelector(".btn-close");
         const projectImage = currentNode.querySelector(".project-img");
@@ -52,19 +50,22 @@ projects.addEventListener('click', function(e) {
         // If user clicks on "description ->", open description section
         openDescription(currentNode, desc, closeButton, projectImage, projectDesc);
 
+        // Close description if header link is clicked
+        header.addEventListener("click", function(e) {
+            if (e.target.matches("a") || e.target.matches("p")) {
+                closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+            }
+        })
+
         // Close description section if x is clicked
         closeButton.addEventListener("click", function(e) {
             closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
-
-            // remove open class from projects-col when closing description
-            if (projects.classList.contains("open")) {
-                projects.classList.remove("open");
-            }
         })
     } else if (body.classList.contains("no-scroll")) {
         body.classList.remove("no-scroll");
     }
 });
+
 
 
 
