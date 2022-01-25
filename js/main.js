@@ -5,10 +5,10 @@ const projects = document.querySelector(".projects-col");
 // Access body to stop scrolling behavior
 const body = document.querySelector("body");
 
-// Header section to close description section 
-// when links are clicked
+// Header section 
 const header = document.querySelector(".header");
 
+// *** FUNCTIONS ***
 
 // Open Description
 const openDescription = (element, desc, closeBtn, projBtn, projDesc) => {
@@ -29,8 +29,9 @@ const closeDescription = (element, desc, closeBtn, projBtn, projDesc) => {
     projBtn.classList.remove("hidden");
     desc.classList.remove("hidden");
     projDesc.classList.add("hidden");
-    body.classList.add("no-scroll");
     element.scrollIntoView({block: "center"});
+    body.classList.remove("no-scroll");
+    
 }
 
 
@@ -46,6 +47,8 @@ projects.addEventListener('click', function(e) {
         const closeButton = currentNode.querySelector(".btn-close");
         const projectImage = currentNode.querySelector(".project-img");
         const projectDesc = currentNode.querySelector(".project-description");
+        // Back to portfolio button
+        const backBtn = currentNode.querySelector(".back");
 
         // If user clicks on "description ->", open description section
         openDescription(currentNode, desc, closeButton, projectImage, projectDesc);
@@ -57,12 +60,15 @@ projects.addEventListener('click', function(e) {
             }
         })
 
+        // Close description if 'back to portfolio' btn is clicked
+        backBtn.addEventListener("click", function(e) {
+            closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+        })
+
         // Close description section if x is clicked
         closeButton.addEventListener("click", function(e) {
             closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
         })
-    } else if (body.classList.contains("no-scroll")) {
-        body.classList.remove("no-scroll");
     }
 });
 

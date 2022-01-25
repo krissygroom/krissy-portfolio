@@ -141,7 +141,6 @@ p {
 }
 
 .heading--primary {
-  /* font-family: 'Festive', cursive; */
   font-size: 4.2rem;
   color: #ffc458;
   font-weight: 700;
@@ -161,6 +160,55 @@ p {
 
 .color-pink {
   color: #b83978;
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem; 
+    padding: 1.6rem 3.2rem;
+    border-radius: 8px; 
+    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+
+    transition: all 0.2s;
+}
+
+.btn--full {
+    background-color: #b83978;
+    color: #fff;
+}
+
+.btn--full:hover {
+    background-color: #812854;
+}
+
+.btn--full:active {
+  background-color: #5c1d3c;
+
+}
+
+.btn--outline {
+     background-color: #fff;
+     color: rgba(38, 38, 39, 0.8);
+     box-shadow: inset 0 0 0 1.5px #b83978;
+
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+     background-color: #eac4d7;
+     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--outline:active {
+  background-color: #d488ae;
+
 }
 
 

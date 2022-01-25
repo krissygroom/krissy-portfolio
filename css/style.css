@@ -251,7 +251,7 @@ so added this styling to <a> */
     background-color: rgba(255, 255, 255);
 
     overflow: hidden;
-    height: 60%;
+    height: 55%;
     width: 60%;
     border-radius: 11px;
     margin-top: 10rem;
@@ -261,9 +261,7 @@ so added this styling to <a> */
 .desc-img-box {
     background-size: cover;
     background-position: top;
-    border: 2px solid #262627; 
-    border-top-left-radius: 11px;
-    border-bottom-left-radius: 11px;
+    border-right: 1px solid rgba(38, 38, 39, 0.5); 
 }
 
 .project-1 .desc-img-box {
@@ -289,6 +287,7 @@ so added this styling to <a> */
 
 .description-box {
     flex-direction: column;
+    justify-content: center;
     gap: 2.8rem;
     padding: 4.8rem;
 }
@@ -298,6 +297,17 @@ so added this styling to <a> */
     color: #b83978;
     font-weight: 600;
     letter-spacing: .1rem;
+}
+
+.skills,
+.tools {
+    font-size: 1.5rem;
+}
+
+
+.buttons {
+    margin-top: 1.8rem;
+    gap: 1.8rem;
 }
 
 
