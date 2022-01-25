@@ -167,7 +167,6 @@ so added this styling to <a> */
 
     cursor: pointer;
     font-family: 'Festive', cursive;
-    border: none;
 
     /* animate link and hover states */
     transition: all .2s;
@@ -184,7 +183,6 @@ so added this styling to <a> */
 
 .desc.desc--pink:hover {
     border-bottom: 1px solid #b83978;
-
 }
 
 
@@ -255,7 +253,7 @@ so added this styling to <a> */
     overflow: hidden;
     height: 60%;
     width: 60%;
-    border-radius: 12px;
+    border-radius: 11px;
     margin-top: 10rem;
     overflow: hidden;
 }
@@ -292,7 +290,7 @@ so added this styling to <a> */
 .description-box {
     flex-direction: column;
     gap: 2.8rem;
-    padding: 3.6rem;
+    padding: 4.8rem;
 }
 
 .description-box span {

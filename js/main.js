@@ -69,7 +69,7 @@ projects.addEventListener('click', function(e) {
 
 
 
-// // toggle Description - not working on close - still working on this
+// // toggle Description - not working on close
 // const toggleDescription = (openClose, element, desc, closeBtn, projBtn, projDesc) => {
 //     if (openClose === "open") {
 //         window.scrollTo(0, 0);
