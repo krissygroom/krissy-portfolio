@@ -146,8 +146,6 @@
     /* position so X is in upper rt corner when
     description is open */
     position: relative;
-
-    transition: all 0.3s ease;
 }
 
 /* Getting a bug with the anchor & img
@@ -229,30 +227,18 @@ so added this styling to <a>*/
 /******* PROJECTS COLUMN - DESCRIPTION BUTTON PRESSED *******/
 .description {
     display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
     background-color: inherit;
     position: absolute;
     top: 0;
     left: 0;
 
-    /* move all the way to right */
-    /* transform: translateX(0); */
     width: 100%;
     height: 100vh;
     z-index: 1000;
 
     overflow: hidden;
-    /* align-items: flex-start; */
-
-
-    /* make the image much smaller and add description text w/js */
-    /* - see github project for hints at this 
-    - add hidden to header when this is open as well
-    - add an X in top right corner to click on and return to home
-    (delete no-scroll, remove .description, and .sm-img*/
-}
-
-.sm-img {
-    width: 15%;
 }
 
 /* stop scrolling */
@@ -275,13 +261,44 @@ so added this styling to <a>*/
     cursor: pointer;
 
     transition: all 0.2s;
-
-    /* move all shared btn properties to general and 
-    change classes for specific buttons as needed */
 }
 
 .btn-close:hover {
     transform: scale(1.3);
+}
+
+.project-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.8);
+
+    overflow: hidden;
+    height: 50%;
+    width: 60%;
+    border-radius: 12px;
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+.desc-img-box {
+    background-image: url("../img/github.png");
+    background-size: cover;
+    background-position: top; 
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    padding: 3.6rem;
+}
+
+.description-box span {
+    text-transform: lowercase;
+    color: #b83978;
+    font-weight: 600;
+    letter-spacing: .1rem;
 }
 
 

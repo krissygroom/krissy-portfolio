@@ -153,12 +153,16 @@ p {
   display: inline-block;
 }
 
-.heading-secondary {
-  font-size: 1.8rem;
-  color: rgba(38, 38, 39, 0.8);
+.heading-tertiary {
+  display: inline-block;
+  font-size: 3.6rem; 
   font-weight: 600;
-  letter-spacing: 0.05rem;
+  color: #b83978;
+  text-transform: lowercase;
+  letter-spacing: 0.1rem;
+  font-family: 'Festive', cursive;
 }
+
 
 .text-center-v {
   text-align: center;

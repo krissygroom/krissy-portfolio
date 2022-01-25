@@ -19,11 +19,17 @@ projects.addEventListener('click', function(e) {
         // add 'X' button
         const closeButton = currentNode.querySelector(".btn-close");
         const projectImage = currentNode.querySelector(".project-img");
+
+        // hide image and description link
         projectImage.classList.add("hidden");
         desc.classList.add("hidden");
         closeButton.classList.remove("hidden");
 
-        // Close description if x is clicked
+        // open project description section
+        const projectDesc = currentNode.querySelector(".project-description");
+        projectDesc.classList.remove("hidden");
+
+        // Close description section if x is clicked
         closeButton.addEventListener("click", function(e) {
             // 1st close description
             currentNode.classList.remove("description");
@@ -31,6 +37,7 @@ projects.addEventListener('click', function(e) {
             closeButton.classList.add("hidden");
             projectImage.classList.remove("hidden");
             desc.classList.remove("hidden");
+            projectDesc.classList.add("hidden");
             body.classList.add("no-scroll");
             currentNode.scrollIntoView({block: "center"});
         })
