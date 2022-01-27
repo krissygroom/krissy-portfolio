@@ -133,8 +133,10 @@
 
 /* Getting a bug with the anchor & img
 so added this styling to <a> */
-.img-anchor {
-    width: 25%;
+
+.project-box {
+    flex-direction: column;
+    width: 20%;
 }
 
 .project-img {
@@ -183,6 +185,35 @@ so added this styling to <a> */
 
 .desc.desc--pink:hover {
     border-bottom: 1px solid #b83978;
+}
+
+.skills-used p {
+    background-color: rgba(255, 197, 88, 0.2);
+    border-radius: 11px;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgba(38, 38, 39, 0.5);
+    width: 90%;
+    margin: 0 auto;
+    font-style: italic;
+    margin-top: 2rem;
+
+    transition: all .4s;
+}
+
+.skills-used p:hover {
+    background-color: #ffca69;   
+}
+
+.skills-used .pink-background {
+    background-color: rgba(184, 57, 121, 0.2);
+}
+
+.skills-used .pink-background:hover {
+    background-color: #b83979;
+    color: #fff;
 }
 
 

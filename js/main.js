@@ -40,7 +40,7 @@ const closeDescription = (element, desc, closeBtn, projBtn, projDesc) => {
 // Click event on description in project  - add try catch block
 projects.addEventListener('click', function(e) {
     const desc = e.target;
-    const currentNode = desc.parentNode;
+    const currentNode = desc.parentNode.parentNode;
 
     if (desc.matches("h2")) {
         // get elements to toggle
