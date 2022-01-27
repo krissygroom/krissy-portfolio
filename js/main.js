@@ -11,27 +11,24 @@ const header = document.querySelector(".header");
 // *** FUNCTIONS ***
 
 // Open Description
-const openDescription = (element, desc, closeBtn, projBtn, projDesc) => {
+const openDescription = (element, closeBtn, projDesc, projectBox) => {
     element.classList.add("description");
     body.classList.add("no-scroll"); 
     window.scrollTo(0, 0);
-    projBtn.classList.add("hidden");
-    desc.classList.add("hidden");
+    projectBox.classList.add("hidden");
     closeBtn.classList.remove("hidden");
     projDesc.classList.remove("hidden");
 }
 
 
 // Close Description
-const closeDescription = (element, desc, closeBtn, projBtn, projDesc) => {
+const closeDescription = (element, closeBtn, projDesc, projectBox) => {
     element.classList.remove("description");
     closeBtn.classList.add("hidden");
-    projBtn.classList.remove("hidden");
-    desc.classList.remove("hidden");
+    projectBox.classList.remove("hidden");
     projDesc.classList.add("hidden");
     element.scrollIntoView({block: "center"});
-    body.classList.remove("no-scroll");
-    
+    body.classList.remove("no-scroll");   
 }
 
 
@@ -45,29 +42,30 @@ projects.addEventListener('click', function(e) {
     if (desc.matches("h2")) {
         // get elements to toggle
         const closeButton = currentNode.querySelector(".btn-close");
-        const projectImage = currentNode.querySelector(".project-img");
         const projectDesc = currentNode.querySelector(".project-description");
+        const projectBox = currentNode.querySelector(".project-box");
         // Back to portfolio button
         const backBtn = currentNode.querySelector(".back");
 
         // If user clicks on "description ->", open description section
-        openDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+        openDescription(currentNode, closeButton, projectDesc, projectBox);
 
         // Close description if header link is clicked
         header.addEventListener("click", function(e) {
             if (e.target.matches("a") || e.target.matches("p")) {
-                closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+                closeDescription(currentNode, closeButton, projectDesc, projectBox);
             }
         })
 
         // Close description if 'back to portfolio' btn is clicked
         backBtn.addEventListener("click", function(e) {
-            closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+            closeDescription(currentNode, closeButton, projectDesc, projectBox);
         })
 
         // Close description section if x is clicked
         closeButton.addEventListener("click", function(e) {
-            closeDescription(currentNode, desc, closeButton, projectImage, projectDesc);
+            closeDescription(currentNode, closeButton, projectDesc, projectBox);
+
         })
     }
 });
