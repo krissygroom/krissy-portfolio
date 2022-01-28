@@ -8,7 +8,38 @@ const body = document.querySelector("body");
 // Header section 
 const header = document.querySelector(".header");
 
+// View footer when last project is scrolled to
+const footer = document.querySelector(".footer");
+const lastProject = document.getElementById("last-project");
+
+// Get current year for footer
+const yearElement = document.querySelector(".year");
+
+
 // *** FUNCTIONS ***
+
+//*** Footer opens at bottom after scrolling through projects ****/
+const obs = new IntersectionObserver(
+    function(entries) {
+        // Select the element that we're observing
+        const ent = entries[0];
+        // if the element is in view, show the footer
+        if (ent.isIntersecting) {
+            footer.classList.remove("hidden");
+        }
+        else {
+            footer.classList.add("hidden");
+        };
+}, 
+{
+    // start by observing root (window) in the viewport 
+    root: null,
+    // event (footer shows) happens  when all of the last project is in view
+    threshold: 0.5,
+});
+
+obs.observe(lastProject);
+
 
 // Open Description
 const openDescription = (element, closeBtn, projDesc, projectBox) => {
@@ -70,45 +101,7 @@ projects.addEventListener('click', function(e) {
     }
 });
 
-
-
-
-// // toggle Description - not working on close
-// const toggleDescription = (openClose, element, desc, closeBtn, projBtn, projDesc) => {
-//     if (openClose === "open") {
-//         window.scrollTo(0, 0);
-//     } else if (openClose === "close") {
-//         element.scrollIntoView({block: "center"});
-//     }
-//     // no idea why this code is breaking when closing
-//     // description multiple times??
-//     toggleClass(element, "description");
-    
-//     // X button
-//     toggleClass(closeBtn, "hidden");
-
-//     // phone image & description header
-//     toggleClass(projBtn, "hidden");
-//     toggleClass(desc, "hidden");
-
-//     // description div
-//     toggleClass(projDesc, "hidden");
-
-//     toggleClass(body, "no-scroll"); 
-// }
-
-
-// // Toggle classes
-// const toggleClass = (element, className) => {
-//     if (element.classList.contains(className)) {
-//         element.classList.remove(className);
-//     } else {
-//         element.classList.add(className);
-//     }
-// }
-
-
-
-
+// change the year to the current year:
+yearElement.textContent = new Date().getFullYear();
 
 
