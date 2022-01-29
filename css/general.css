@@ -99,12 +99,20 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .flex {
   display: flex;
 }
 
 .flex--center {
   align-items: center;
+}
+
+.container-lg {
+  margin: 4.8rem 25.6rem;
 }
 
 
@@ -123,6 +131,10 @@ ul {
 p {
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 3.2rem;
 }
 
 .margin-bottom-med {
@@ -150,6 +162,13 @@ p {
   font-size: 3.6rem; 
   font-weight: 600;
   color: #b83978;
+}
+
+.heading--tertiary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
 }
 
 
