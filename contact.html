@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Load fonts prior to rending web page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- Animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header flex flex--center">
+      <a href="./index.html">
+        <p class="logo">krissy carr groom</p>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list heading--tertiary flex flex--center">
+          <li><a class="main-nav-link" href="./index.html">Portfolio</a></li>
+          <li><a class="main-nav-link selected-page" href="./about.html">About</a></li>
+          <li><a class="main-nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main">
+        <section class="contact flex flex--center">
+            <h1 class="connect heading heading--primary">Let's connect!</h1>
+            <div class="contact-info grid grid--3-cols">
+                <div class="hire flex">
+                    <h3 class="hire-h heading--tertiary">Hire me</h3>
+                    <hr />
+                    <address class="phone"><a href="tel:801-375-7751">801-375-7751</a></address>
+                    <address class="email"><a href="mailto:krissydgroom@gmail.com">krissydgroom@gmail.com</a></address>
+                </div>
+                <div class="follow flex">
+                    <h3 class="follow-h heading--tertiary">Follow me</h3>
+                    <hr />
+                    <ul class="social-links flex">
+                        <li><a class="social-link" href="https://github.com/krissygroom" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
+                        <li><a class="social-link" href="https://www.linkedin.com/in/krissydgroom/" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
+                      </ul>
+                </div>
+                <div class="meet flex">
+                    <h3 class="meet-h heading--tertiary">Meet me</h3>
+                    <hr />
+                    <address><a href="https://goo.gl/maps/CNVwLauKUsg3tjVFA" target="_blank"> San Diego, California</a></address>
+                    <p>If you happen to be in town, let's grab a coffee!</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="copyright">
+        &copy; <span class="year">2027</span> by Krissy.<ion-icon
+          name="heart-outline"
+        ></ion-icon>
+        All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/footer.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

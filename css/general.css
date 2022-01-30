@@ -115,6 +115,73 @@ body::-webkit-scrollbar {
   margin: 4.8rem 16rem;
 }
 
+/* ********************************* */
+/* HEADER/FOOTER TO USE ACROSS PAGES */
+/* ********************************* */
+
+
+/* HEADER */
+/* ****** */
+
+.header {
+  justify-content: space-between;
+  padding: .5rem 6.4rem;
+  position: sticky;
+  top: 0; 
+  z-index: 1;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.logo {
+  font-family: 'Festive', cursive;
+  font-size: 6.8rem;
+  color: #ffc458;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+
+/* NAVIGATION */
+/* ********** */
+
+.main-nav-list {
+  gap: 12.8rem;
+}
+
+.main-nav-link {
+  display: inline-block;
+  color: #262627;
+}
+
+.main-nav-link:hover {
+  border-bottom: 2px solid #b83978;
+  color: #b83978;
+}
+
+.main-nav-link.selected-page {
+  color: #b83978;
+  border-bottom: none;
+}
+
+
+/* FOOTER */
+/* ********** */
+
+.footer {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .8rem;
+  border-top: 1px solid rgba(84, 142, 152, 0.2);
+}
+
+.footer p {
+  font-size: 1.2rem;
+  color: rgba(38, 38, 39, 0.6);
+}
+
 
 /* ********************************* */
 /* GENERAL REUSABLE COMPONENTS */

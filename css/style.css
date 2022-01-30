@@ -1,49 +1,4 @@
 /* ********************************* */
-/* HEADER */
-/* ********************************* */
-
-.header {
-    justify-content: space-between;
-    padding: .5rem 6.4rem;
-    position: sticky;
-    top: 0; 
-    z-index: 1;
-    background-color: hsla(0, 0%, 100%, 0.6);
-}
-
-.logo {
-    font-family: 'Festive', cursive;
-    font-size: 6.8rem;
-    color: #ffc458;
-    text-transform: lowercase;
-    font-weight: 600;
-}
-
-/* ********************************* */
-/* NAVIGATION */
-/* ********************************* */
-
-.main-nav-list {
-    gap: 12.8rem;
-}
-
-.main-nav-link {
-    display: inline-block;
-    color: #262627;
-}
-
-.main-nav-link:hover {
-    border-bottom: 2px solid #b83978;
-    color: #b83978;
-}
-
-.main-nav-link.selected-page {
-    color: #b83978;
-    border-bottom: none;
-  }
-
-
-/* ********************************* */
 /* MAIN PORTFOLIO SECTION */
 /* ********************************* */
 
@@ -59,6 +14,7 @@
 
 
 /******* INTRO COLUMN *******/
+/****************************/
 
 .intro-col {
     flex-direction: column;
@@ -101,6 +57,7 @@
 
 
 /******* PROJECTS COLUMN *******/
+/*******************************/
 
 .projects-col {
     flex-direction: column;
@@ -126,9 +83,6 @@
     description is open */
     position: relative;
 }
-
-/* Getting a bug with the anchor & img
-so added this styling to <a> */
 
 .project-box {
     flex-direction: column;
@@ -229,7 +183,9 @@ so added this styling to <a> */
 }
 
 
-/******* PROJECTS COLUMN - DESCRIPTION BUTTON PRESSED *******/
+/******* PROJECTS COLUMN - DESCRIPTION LINK PRESSED *******/
+/**********************************************************/
+
 .description {
     display: flex;
     flex-direction:column;
@@ -337,23 +293,5 @@ so added this styling to <a> */
     gap: 1.8rem;
 }
 
-
-/******* FOOTER *******/
-
-
-.footer {
-    background-color: hsla(0, 0%, 100%, 0.6);
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: .8rem;
-    border-top: 1px solid rgba(84, 142, 152, 0.2);
-}
-
-.footer p {
-    font-size: 1.2rem;
-    color: rgba(38, 38, 39, 0.6);
-}
 
 

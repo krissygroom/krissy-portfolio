@@ -12,8 +12,6 @@ const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 const lastProject = document.getElementById("last-project");
 
-// Get current year for footer
-const yearElement = document.querySelector(".year");
 
 
 // *** FUNCTIONS ***
@@ -101,7 +99,5 @@ projects.addEventListener('click', function(e) {
     }
 });
 
-// change the year to the current year:
-yearElement.textContent = new Date().getFullYear();
 
 

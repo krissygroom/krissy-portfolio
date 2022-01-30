@@ -1,0 +1,90 @@
+/* Header */
+.header {
+    position: relative;
+}
+
+/* Contacts section */
+.contact {
+    background-color: #548e98;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12.8rem;
+}
+
+.connect {
+    font-size: 5.6rem;
+    margin: 0;
+}
+
+.connect-img {
+    width: 13rem; 
+    border-radius: 50%;
+    border: 2px solid #ffc458;
+}
+
+.contact-info {
+    width: 60%;
+    text-align: center;
+    gap: 2.4rem;
+}
+
+.hire,
+.follow,
+.meet {
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 11px;
+    width: 80%;
+    justify-self: center;
+    padding: 3.8rem 0;
+    gap: 2.4rem;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+.hire:hover,
+.follow:hover,
+.meet:hover {
+    transform: scale(1.1);
+}
+
+.hire-h,
+.follow-h,
+.meet-h {
+    font-size: 2.2rem;
+}
+
+address {
+    font-style: normal;
+    font-size: 1.6rem; 
+}
+
+address a:link,
+address a:visited {
+    color: #262627;
+}
+
+address a:hover {
+    color: #b83978;
+    font-weight: 600;
+}
+
+.social-links {
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.social-icon {
+    height: 4.4rem;
+    width: 4.4rem;
+}
+
+hr {
+   color: #548e98; 
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+}
