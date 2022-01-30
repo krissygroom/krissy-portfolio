@@ -48,13 +48,13 @@
 .social-icon {
     height: 2.4rem;
     width: 2.4rem;
-    color: #ffca69;
+    color: var(--main-gold);
 
     transition: all 0.2s;
 }
 
 .social-icon:hover {
-    color: #b83978;
+    color: var(--main-pink);
 }
 
 
@@ -115,7 +115,7 @@
     text-decoration: none;
     font-size: 3.2rem; 
     font-weight: 500;
-    color: #ffca69;
+    color: var(--main-gold);
     text-transform: lowercase;
     letter-spacing: 0.1rem;
 
@@ -127,16 +127,16 @@
 }
 
 .desc:hover {
-    border-bottom: 1px solid #ffca69;
+    border-bottom: 1px solid var(--main-gold);
     transform: scale(1.1);
 }
 
 .desc.desc--pink {
-    color: #b83978;
+    color: var(--main-pink);
 }
 
 .desc.desc--pink:hover {
-    border-bottom: 1px solid #b83978;
+    border-bottom: 1px solid var(--main-pink);
 }
 
 .skills-used p {
@@ -156,7 +156,7 @@
 }
 
 .skills-used p:hover {
-    background-color: #ffca69;   
+    background-color: var(--main-gold);   
 }
 
 .skills-used .pink-background {
@@ -164,24 +164,24 @@
 }
 
 .skills-used .pink-background:hover {
-    background-color: #b83979;
+    background-color: var(--main-pink);
     color: #fff;
 }
 
 
 .project-1 {
-    background-color: #6ab0dd;
+    background-color: var(--main-blue);
 }
 .project-2,
 .project-6 {
-    background-color: #548e98;
+    background-color: var(--main-green);
 }
 .project-3,
 .project-5 {
-    background-color: #ffca69;
+    background-color: var(--main-gold);
 }
 .project-4 {
-    background-color: #b83978;
+    background-color: var(--main-pink);
 }
 
 
@@ -202,9 +202,6 @@
     z-index: 2;
 
     overflow: hidden;
-/* 
-    overflow-x: hidden;
-    overflow-y: auto; */
 }
 
 /* stop scrolling (add to body when .description is open) */
@@ -284,7 +281,7 @@
 
 .description-box span {
     text-transform: lowercase;
-    color: #b83978;
+    color: var(--main-pink);
     font-weight: 600;
     letter-spacing: .1rem;
 }

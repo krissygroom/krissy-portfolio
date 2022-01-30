@@ -33,7 +33,7 @@
     padding: 3.2rem 4.8rem;
     border-radius: 11px;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
-    border: 1px solid #ffca69;
+    border: 1px solid var(--main-gold);
 }
 
 .about-heading {
@@ -83,11 +83,15 @@
 }
 
 .skill {
-    background-color: #b83979;
+    background-color: var(--main-pink);
     color: #fff;
     padding: 1.6rem 1.2rem;
     text-transform: uppercase;
     border-radius: 8px;
+}
+
+.skill:hover {
+    font-weight: 600;
 }
 
 /* ********************************* */

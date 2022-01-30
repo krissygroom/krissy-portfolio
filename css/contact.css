@@ -5,7 +5,7 @@
 
 /* Contacts section */
 .contact {
-    background-color: #548e98;
+    background-color: var(--main-green);
     height: 85vh;
     flex-direction: column;
     justify-content: center;
@@ -15,12 +15,6 @@
 .connect {
     font-size: 5.8rem;
     margin: 0;
-}
-
-.connect-img {
-    width: 13rem; 
-    border-radius: 50%;
-    border: 2px solid #ffc458;
 }
 
 .contact-info {
@@ -45,9 +39,9 @@
     transform: scale(1.1);
 }
 
-.heading--tertiary {
+h3.heading--tertiary {
     font-size: 2.2rem;
-    color: #b83978;
+    color: var(--main-pink);
 }
 
 .info-box {
@@ -66,7 +60,7 @@ address a:visited {
 }
 
 address a:hover {
-    color: #b83978;
+    color: var(--main-pink);
     font-weight: 600;
 }
 
@@ -82,7 +76,7 @@ address a:hover {
 }
 
 hr {
-   color: #548e98; 
+   color: var(--main-green); 
 }
 
 /* Footer */
