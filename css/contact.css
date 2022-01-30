@@ -9,11 +9,11 @@
     height: 85vh;
     flex-direction: column;
     justify-content: center;
-    gap: 12.8rem;
+    gap: 9.6rem;
 }
 
 .connect {
-    font-size: 5.6rem;
+    font-size: 5.8rem;
     margin: 0;
 }
 
@@ -24,18 +24,16 @@
 }
 
 .contact-info {
-    width: 60%;
+    width: 65%;
     text-align: center;
     gap: 2.4rem;
 }
 
-.hire,
-.follow,
-.meet {
+.contact-box {
     flex-direction: column;
     background-color: #fff;
     border-radius: 11px;
-    width: 80%;
+    width: 85%;
     justify-self: center;
     padding: 3.8rem 0;
     gap: 2.4rem;
@@ -43,16 +41,18 @@
     transition: all .2s;
 }
 
-.hire:hover,
-.follow:hover,
-.meet:hover {
+.contact-box:hover {
     transform: scale(1.1);
 }
 
-.hire-h,
-.follow-h,
-.meet-h {
+.heading--tertiary {
     font-size: 2.2rem;
+    color: #b83978;
+}
+
+.info-box {
+    padding: 0 2.4rem;
+    color: rgba(38, 38, 39, 0.8);
 }
 
 address {
@@ -62,7 +62,7 @@ address {
 
 address a:link,
 address a:visited {
-    color: #262627;
+    color: rgba(38, 38, 39, 0.8);
 }
 
 address a:hover {
@@ -73,6 +73,7 @@ address a:hover {
 .social-links {
     justify-content: center;
     gap: 3.2rem;
+    margin-top: 0;
 }
 
 .social-icon {

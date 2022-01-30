@@ -1,5 +1,5 @@
 /* ********************************* */
-/* MEDIA QUERIES - TODO: add to queries.css */
+/* MEDIA QUERIES */
 /* ********************************* */
 
 /* $bp-small: 48em; // 768px
@@ -15,6 +15,10 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 414×896 (4.58%)
 1536×864 (3.88%)
 375×667 (3.75%) */
+
+/* ********************************* */
+/* HOME PAGE */
+/* ********************************* */
 
 /* Large Desktop Screens */
 @media (min-width: 125em) {
@@ -49,3 +53,11 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 }
 
 
+/* ********************************* */
+/* ABOUT PAGE */
+/* ********************************* */
+
+
+/* ********************************* */
+/* CONTACT PAGE */
+/* ********************************* */

@@ -49,10 +49,12 @@
     height: 2.4rem;
     width: 2.4rem;
     color: #ffca69;
+
+    transition: all 0.2s;
 }
 
 .social-icon:hover {
-    filter: brightness(.9);
+    color: #b83978;
 }
 
 
@@ -200,6 +202,9 @@
     z-index: 2;
 
     overflow: hidden;
+/* 
+    overflow-x: hidden;
+    overflow-y: auto; */
 }
 
 /* stop scrolling (add to body when .description is open) */
@@ -238,7 +243,9 @@
     width: 60%;
     border-radius: 11px;
     margin-top: 10rem;
-    overflow: hidden;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .desc-img-box {
