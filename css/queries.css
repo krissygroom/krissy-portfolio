@@ -153,4 +153,51 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 @media (max-width: 86em) {
     /* 1366px */
 
+    /* HOME PAGE */
+
+    .logo {
+        font-size: 6.2rem;
+    }
+
+    .main-nav-list {
+        gap: 9.6rem;
+      }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .skills-used {
+        width: 115%;
+    }
+
+    .skills-used p {
+        font-size: 1rem;
+    }
+
+    .skills,
+    .tools {
+        font-size: 1.2rem;
+    }
+
+    /* ABOUT PAGE */
+    .hero-heading {
+        font-size: 4.2rem;
+    }
+
+    .heading--secondary {
+        font-size: 3.8rem;
+    }
+
+    /* CONTACT PAGE */
+    .connect.heading--primary {
+        font-size: 4.8rem;
+    }
+
+    .contact-info a {
+        font-size: 1.4rem;
+    }
+
+    
+
 }
