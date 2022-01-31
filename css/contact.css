@@ -73,6 +73,13 @@ address a:hover {
 .social-icon {
     height: 4.4rem;
     width: 4.4rem;
+    color: var(--main-gold);
+
+    transition: all 0.2s;
+}
+
+.social-icon:hover {
+    color: var(--main-pink);
 }
 
 hr {

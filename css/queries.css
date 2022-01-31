@@ -16,29 +16,96 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 1536×864 (3.88%)
 375×667 (3.75%) */
 
-/* ********************************* */
-/* HOME PAGE */
-/* ********************************* */
 
 /* Large Desktop Screens */
 @media (min-width: 125em) {
+    /* 2000px */
+
+    /********* HOME PAGE *********/
+
+    /* Header */
     .logo {
         font-size: 7.4rem;
     }
 
-    .intro-img {
-        width: 70%;
-    }
-    
-    .img-anchor {
-        width: 20%;
+    .heading--tertiary {
+        font-size: 2.4rem;
     }
 
-    .landing-page {
-        grid-template-columns: 33% 1fr;
+    /* Intro section */
+    .intro-img {
+        width: 75%;
     }
+
+    .heading--primary {
+        font-size: 5.2rem;
+    }
+
+    .intro-p {
+        font-size: 1.8rem;
+    }
+
+    .social-icon {
+        height: 4.2rem;
+        width: 4.2rem;
+    }
+
+    .project-box {
+        width: 15%;
+    }
+
+    .desc {
+        font-size: 4.2rem;
+    }
+
+    .skills-used p {
+        font-size: 1.6rem;
+    }
+
+    .description-box .heading--secondary {
+        font-size: 4.2rem;
+    }
+
+    /********* ABOUT PAGE *********/
+
+    .hero-heading {
+        font-size: 5.8rem;
+    }
+
+    .container-lg {
+        margin: 4.8rem 25.6rem;
+      }
+
+      p {
+        font-size: 2rem;
+    }
+
+    /********* CONTACT PAGE *********/
+    .connect.heading--primary {
+        font-size: 5.8rem;
+    }
+
+    .contact-info .social-icon {
+        height: 5.2rem;
+        width: 5.2rem;
+    }
+
+    .contact-info a {
+        font-size: 2rem;
+    }
+
+    .info-box {
+        padding: 0 3.6rem 1.2rem 3.6rem;
+    }
+
+
 }
+
+/* Extra large screens */
 @media (min-width: 175em) {  
+    /* 2800px */
+
+    /* HOME PAGE */
     .intro-col {
         gap: 0;
     }
@@ -46,18 +113,44 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .intro-img {
         width: 60%;
     }
-    
-    .img-anchor {
-        width: 15%;
+
+    p {
+        font-size: 2rem;
     }
+
+    .project-box {
+        width: 13%;
+    }
+
+    /* ABOUT PAGE */
+    .container-lg {
+        margin: 4.8rem 28.8rem;
+      }
 }
 
 
-/* ********************************* */
-/* ABOUT PAGE */
-/* ********************************* */
+/* Desktop/laptops */
+@media (max-width: 96em) {
+    /* 1536px */
 
+    /* HOME PAGE */
+    .project-description {
+        width: 70%;
+        height: 65%;
+    }
 
-/* ********************************* */
-/* CONTACT PAGE */
-/* ********************************* */
+    /* ABOUT PAGE */
+    .container-lg {
+        margin: 4.8rem 17.8rem;
+      }
+     
+    .contact-info {
+        width: 75%;
+    }
+}
+
+/* Smaller Desktops/laptops */
+@media (max-width: 86em) {
+    /* 1366px */
+
+}

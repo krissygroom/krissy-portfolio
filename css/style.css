@@ -73,7 +73,9 @@
 
 .project {
     height: 80vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .project-container {
@@ -147,7 +149,7 @@
     font-weight: 600;
     font-size: 1.2rem;
     color: rgba(38, 38, 39, 0.4);
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     font-style: italic;
     margin-top: 2rem;
@@ -237,8 +239,8 @@
     background-color: rgba(255, 255, 255);
 
     overflow: hidden;
-    height: 55%;
     width: 60%;
+    height: 60%;
     border-radius: 11px;
     margin-top: 10rem;
 
@@ -249,7 +251,7 @@
 .desc-img-box {
     background-size: cover;
     background-position: top;
-    border-right: 1px solid rgba(38, 38, 39, 0.5); 
+    border-right: 1px solid rgba(38, 38, 39, 0.5);
 }
 
 .project-1 .desc-img-box {
