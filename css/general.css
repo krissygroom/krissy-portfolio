@@ -68,7 +68,6 @@ body {
   line-height: 1;
   font-weight: 500;
   color: #262627;
-  overflow-x: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -119,6 +118,7 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   padding: .5rem 6.4rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0; 
   z-index: 1;
   background-color: hsla(0, 0%, 100%, 0.6);
