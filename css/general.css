@@ -60,7 +60,7 @@ dark grey/almost black: #262627
 html {
   /* font size 10px */
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {

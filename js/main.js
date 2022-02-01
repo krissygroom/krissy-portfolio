@@ -2,11 +2,9 @@
 // Projects section to access description
 const projects = document.querySelector(".projects-col");
 
-// Access body to stop scrolling behavior
+// Access body & html to stop scrolling behavior
 const body = document.querySelector("body");
-
-// Header section 
-const header = document.querySelector(".header");
+const html = document.querySelector("html");
 
 // View footer when last project is scrolled to
 const footer = document.querySelector(".footer");
@@ -42,8 +40,10 @@ obs.observe(lastProject);
 // Open Description
 const openDescription = (element, closeBtn, projDesc, projectBox) => {
     element.classList.add("description");
+    element.classList.add("full-vh");
     body.classList.add("no-scroll"); 
-    window.scrollTo(0, 0);
+    html.classList.add("no-scroll"); 
+    element.scrollIntoView({block: "center"});
     projectBox.classList.add("hidden");
     closeBtn.classList.remove("hidden");
     projDesc.classList.remove("hidden");
@@ -53,11 +53,13 @@ const openDescription = (element, closeBtn, projDesc, projectBox) => {
 // Close Description
 const closeDescription = (element, closeBtn, projDesc, projectBox) => {
     element.classList.remove("description");
+    element.classList.remove("full-vh");
     closeBtn.classList.add("hidden");
     projectBox.classList.remove("hidden");
     projDesc.classList.add("hidden");
     element.scrollIntoView({block: "center"});
     body.classList.remove("no-scroll");   
+    html.classList.remove("no-scroll");   
 }
 
 
@@ -78,13 +80,6 @@ projects.addEventListener('click', function(e) {
 
         // If user clicks on "description ->", open description section
         openDescription(currentNode, closeButton, projectDesc, projectBox);
-
-        // Close description if header link is clicked
-        header.addEventListener("click", function(e) {
-            if (e.target.matches("a") || e.target.matches("p")) {
-                closeDescription(currentNode, closeButton, projectDesc, projectBox);
-            }
-        })
 
         // Close description if 'back to portfolio' btn is clicked
         backBtn.addEventListener("click", function(e) {

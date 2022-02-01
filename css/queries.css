@@ -237,6 +237,9 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 @media (max-width: 60em) {
 
     /* Header*/
+    /* .header {
+        display: sticky;
+    } */
 
     /* mobile navigation - using component from Omnifood course project */
     .btn-mobile-nav {

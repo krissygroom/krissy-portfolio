@@ -223,7 +223,11 @@
 
 /* stop scrolling (add to body when .description is open) */
 .no-scroll {
-    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.full-vh {
+    height: 100vh;
 }
 
 .btn-close {
