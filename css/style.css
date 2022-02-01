@@ -270,7 +270,7 @@
 
 .project-1 .desc-img-box {
     background-image: url("../img/github.png");
-    background-position: top-left;
+    /* background-position: top-left; */
 }
 .project-2 .desc-img-box {
     background-image: url("../img/unplugged.png");
