@@ -87,10 +87,12 @@
     padding: 1.6rem 1.2rem;
     text-transform: uppercase;
     border-radius: 8px;
+    font-weight: 600;
+
+    transition: all .2s;
 }
 
 .skill:hover {
-    font-weight: 600;
     transform: scale(1.05);
 }
 
