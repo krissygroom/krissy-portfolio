@@ -1,12 +1,12 @@
 /* Header */
-.header {
+/* .header {
     position: relative;
-}
+} */
 
 /* Contacts section */
 .contact {
     background-color: var(--main-green);
-    height: 90vh;
+    min-height: 90vh;
     flex-direction: column;
     justify-content: center;
     gap: 9.6rem;

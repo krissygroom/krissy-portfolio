@@ -408,6 +408,12 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
       }
 
     /* CONTACTS PAGE */
+
+    /* .contact {
+        height: auto;
+    } */
+    /* bug with flexbox overflowing container */
+
     
     .contact {
         height: 100%;
@@ -577,6 +583,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .my-tools {
         grid-template-columns: 1fr;
         width: 70%;
+        gap: 2.4rem;
     }
 
 }
