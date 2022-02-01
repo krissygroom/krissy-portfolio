@@ -87,9 +87,9 @@
 
 .project {
     height: 80vh;
-    /* overflow: hidden; */
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
 }
 
 .project-container {
@@ -208,7 +208,7 @@
 .description {
     display: flex;
     flex-direction:column;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: inherit;
     position: absolute;
     top: 0;
@@ -260,10 +260,6 @@
     width: 60%;
     height: 60%;
     border-radius: 11px;
-    margin-top: 10rem;
-
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .desc-img-box {

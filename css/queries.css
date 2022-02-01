@@ -189,8 +189,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
     /* ABOUT PAGE */
     .container-lg {
-        margin-left: 10.8rem;
-        margin-right: 10.8rem;
+        margin: 4.8rem 10.8rem;
       }
 
     .about-text-p {
@@ -224,6 +223,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     }
 
     /* ABOUT PAGE */
+    
 
     /* CONTACT PAGE */
     .contact-info {
@@ -235,11 +235,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
 /* LESS THAN 960px (Tablets) */
 @media (max-width: 60em) {
-
-    /* Header*/
-    /* .header {
-        display: sticky;
-    } */
 
     /* mobile navigation - using component from Omnifood course project */
     .btn-mobile-nav {
@@ -366,7 +361,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     }
 
     .project-box {
-        width: 17%;
+        width: 18%;
     }
 
     .skills-used {
@@ -377,10 +372,252 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         font-size: 1.1rem;
     }
 
+    /* Description section */
+    .project-description {
+        grid-template-columns: 40% 1fr;
+        width: 80%;
+    }
+
+    .project-description .buttons {
+        flex-direction: column;  
+    }
+
+    .buttons a,
+    .buttons .back {
+        width: 75%;
+        text-align: center;
+    }
+
+    .description-box {
+        padding: 2.4rem;
+    }
+
     /* ABOUT PAGE */
     .container-lg {
-        margin-left: 5.2rem;
-        margin-right: 5.2rem;
+        margin-left: 4.8rem 5.2rem;
       }
+
+    /* CONTACTS PAGE */
+    
+    .contact {
+        height: 100%;
+        gap: 4.8rem;
+        padding: 6.4rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        width: 45%;
+        height: 25%;
+        gap: 4.8rem;
+    }
+
+}
+
+/* LESS THAN 800 (Tablets) */
+@media (max-width: 50em) {
+    html {
+        /* 8px / 16px */
+        font-size: 50%;
+    }
+
+    /* HOME PAGE */
+    .intro-col {
+        padding: 2.4rem 5.4rem; 
+    }
+
+    .intro-img {
+        width: 65%;
+    }
+
+    .project-box {
+        width: 25%;
+    }
+
+    .project-description {
+        height: 80%;
+    }
+
+    /* ABOUT PAGE */
+
+    .hero-heading {
+        font-size: 4.6rem;
+    }
+
+    .about-text {
+        padding: 3.6rem;
+    }
+    .about-text-p {
+        grid-template-columns: 1fr;
+        padding: 0 1.2rem;
+    }
+
+    .about-text-p span {
+        display: inline-block;
+        padding-top: 2.4rem;
+    }
+}
+
+/* LESS THAN 640 (Small Tablets/Larger Phones) */
+@media (max-width: 40em) {
+
+    /* HOME PAGE */
+    .intro-img {
+        width: 75%;
+    }
+    .project-box {
+        width: 30%;
+    }
+
+    /* Description section*/
+    .project-description {
+        grid-template-columns: 1fr;
+        height: 70%;
+
+        padding: 3.6rem;
+    }
+
+    .desc-img-box {
+        display: none;
+    }
+
+    .description-box {
+        padding: 0;
+    }
+
+    .project-description .buttons {
+        flex-direction: row; 
+        gap: 2.8rem; 
+    }
+
+    .buttons a,
+    .buttons .back {
+        width: auto;
+        text-align: center;
+    }
+
+    /* CONTACT PAGE */
+    .contact-info {
+        width: 55%;
+    }
+    
+}
+
+/* LESS THAN 544 (Phones) */
+@media (max-width: 34em) {
+
+    html {
+        /* 8px / 16px */
+        font-size: 45%;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 0.5rem 2.4rem;
+    }
+
+    .logo { 
+        font-size: 4.8rem;
+    }
+
+    .icon-mobile-nav {
+        height: 3.6rem;
+        width: 3.6rem;
+      }
+
+    /* HOME PAGE */
+    .intro-col {
+        padding: 2.4rem; 
+    }
+
+    .intro-img {
+        width: 80%;
+    }
+
+    .heading.heading--primary {
+        font-size: 4rem;
+    }
+
+    .intro-text {
+        width: 85%;
+    }
+    .project-box {
+        width: 40%;
+    }
+
+    /* Description Section */
+    .project-description .buttons {
+        gap: 1.6rem;
+    }
+
+    /* ABOUT PAGE */
+    .hero-heading.heading.heading--primary {
+        font-size: 3.6rem;
+    }
+
+    .heading--secondary {
+        font-size: 3.2rem;
+    }
+
+    .container-lg {
+        margin: 4.8rem 2.4rem;
+      }
+
+    .my-skills,
+    .my-tools {
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+
+}
+
+/* LESS THAN 450 (Smaller phones) */
+@media (max-width: 28em) {
+    .logo { 
+        font-size: 4.8rem;
+    }
+
+    /* HOME PAGE */
+
+    .container-intro .heading.heading--primary {
+        font-size: 4rem;
+    }
+
+    .intro-img {
+        width: 85%;
+    }
+
+    /* Description section*/
+    .project-description {
+        height: 80%;
+    }
+    .project-description .buttons {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    /* ABOUT PAGE */
+    .about-text-p {
+        padding: 0;
+    }
+
+    .my-skills,
+    .my-tools {
+        width: 80%;
+    }
+
+    /* CONTACT PAGE */
+
+    .contact {
+        padding: 4.8rem 0;
+    }
+    .contact-info {
+        width: 75%;
+    }
+    
+    .contact-box {
+        width: 85%;
+    }
+
 }
 
