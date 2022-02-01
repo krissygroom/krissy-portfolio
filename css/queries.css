@@ -237,7 +237,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 @media (max-width: 60em) {
 
 
-    /* Adding this makes sticky nav not work but  */
+    /* Adding overflow makes sticky nav not work so need to add height*/
     body {
         overflow-x: hidden;
         height: 100vh;
@@ -267,6 +267,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 2.4rem;
 
         transition: all 0.5s;
 
