@@ -70,6 +70,11 @@
 /******* PROJECTS COLUMN *******/
 /*******************************/
 
+/* projects title hidden until mobile size screens */
+.title-projects {
+    display: none;
+}
+
 .projects-col {
     flex-direction: column;
 }

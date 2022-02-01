@@ -165,7 +165,7 @@ body::-webkit-scrollbar {
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: rgba(38, 38, 39, 0.8);
 }
 
 .icon-mobile-nav[name="close-outline"] {
