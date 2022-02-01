@@ -407,14 +407,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         margin-left: 4.8rem 5.2rem;
       }
 
+      .my-skills,
+      .my-tools {
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+      }
+
     /* CONTACTS PAGE */
-
-    /* .contact {
-        height: auto;
-    } */
-    /* bug with flexbox overflowing container */
-
-    
+ 
     .contact {
         height: 100%;
         gap: 4.8rem;

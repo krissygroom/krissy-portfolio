@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 9.6rem;
+    min-width: 0;
 }
 
 .connect {
