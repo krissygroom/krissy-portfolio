@@ -17,11 +17,9 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 375×667 (3.75%) */
 
 
-/* Large Desktop Screens */
+/* GREATER THAN 2000px (Large Desktop Screens) */
 @media (min-width: 125em) {
     /* 2000px */
-
-    /********* HOME PAGE *********/
 
     /* Header */
     .logo {
@@ -31,6 +29,8 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .heading--tertiary {
         font-size: 2.4rem;
     }
+
+    /********* HOME PAGE *********/
 
     /* Intro section */
     .intro-img {
@@ -101,9 +101,8 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
 }
 
-/* Extra large screens */
+/* GREATER THAN 2800px (Extra large screens) */
 @media (min-width: 175em) {  
-    /* 2800px */
 
     /* HOME PAGE */
     .intro-col {
@@ -129,11 +128,29 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 }
 
 
-/* Desktop/laptops */
+/* LESS THAN 1536px (Desktop/laptops) */
 @media (max-width: 96em) {
     /* 1536px */
 
+    /* HEADER */
+    .header {
+        padding: .5rem 5.4rem;
+    }
+
+    .logo { 
+        font-size: 6.2rem;
+    }
+
     /* HOME PAGE */
+
+    .home-page {
+        padding-left: 5.4rem;
+    }
+
+    .intro-col .heading--primary {
+        margin: 1.6rem 0;
+    }
+
     .project-description {
         width: 70%;
         height: 65%;
@@ -143,61 +160,149 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .container-lg {
         margin: 4.8rem 17.8rem;
       }
-     
+    
+     /* CONTACT PAGE  */
     .contact-info {
         width: 75%;
+        gap: 1.2rem;
+    }
+
+    .contact-box {
+        width: 90%;
     }
 }
 
-/* Smaller Desktops/laptops */
+/* LESS THAN ~1366px (Smaller Desktops/laptops) */
 @media (max-width: 86em) {
-    /* 1366px */
+    /* All text slightly smaller */
+    /* 9.5px instead of 10
+    so: 9.5/16 = 59.375% */
+    html {
+        font-size: 59.375%;
+    }
 
     /* HOME PAGE */
-
-    .logo {
-        font-size: 6.2rem;
-    }
-
-    .main-nav-list {
-        gap: 9.6rem;
-      }
-
-    p {
-        font-size: 1.4rem;
-    }
 
     .skills-used {
         width: 115%;
     }
 
-    .skills-used p {
-        font-size: 1rem;
+    /* ABOUT PAGE */
+    .container-lg {
+        margin-left: 10.8rem;
+        margin-right: 10.8rem;
+      }
+
+    .about-text-p {
+        gap: 4.2rem;
+    }
+}
+
+/* LESS THAN 1200px (Landscape tablets)*/ 
+@media (max-width: 75em) {
+
+    /* All text slightly smaller */
+    /* 9px instead of 10
+    so: 9/16 = 56.25% */
+    html {
+        font-size: 56.25%;
     }
 
-    .skills,
-    .tools {
-        font-size: 1.2rem;
+    /* HEADER */
+    .main-nav-list {
+        gap: 9.8rem;
+    }
+
+    /* HOME PAGE */
+
+    .intro-img {
+        width: 95%;
+    }
+
+    .project-box {
+        width: 28%;
     }
 
     /* ABOUT PAGE */
-    .hero-heading {
-        font-size: 4.2rem;
-    }
-
-    .heading--secondary {
-        font-size: 3.8rem;
-    }
 
     /* CONTACT PAGE */
-    .connect.heading--primary {
-        font-size: 4.8rem;
+    .contact-info {
+        width: 86%;
     }
-
-    .contact-info a {
-        font-size: 1.4rem;
-    }
-
-    
 
 }
+
+
+/* LESS THAN 960px (Tablets) */
+@media (max-width: 60em) {
+    html {
+        /* 8px / 16px */
+        /* font-size: 50%; */
+    }
+
+    /* HEADER */
+
+    /* HOME PAGE */
+
+    /* Intro column */
+    .home-page {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 2.4rem;
+    }
+
+    .intro-col {
+        position: relative;
+        height: auto;
+        top: 0;
+        align-items: center;
+        padding: 0 5.4rem;
+        gap: 2.4rem;
+    }
+
+    .container-intro {
+        align-items: center;
+    }
+
+    .container-intro .heading--primary {
+        font-size: 5rem;
+    }
+
+    .intro-text {
+        width: 70%;
+        text-align: center;
+    }
+
+    .intro-img {
+        width: 50%;
+    }
+
+    .intro-p {
+        font-size: 1.8rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 2.4rem;
+    }
+
+    .social-icon {
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+
+   
+    /* Projects Column */
+    .project-box {
+        width: 20%;
+    }
+
+
+
+    /* ABOUT PAGE */
+    .container-lg {
+        margin-left: 5.2rem;
+        margin-right: 5.2rem;
+      }
+}
+
