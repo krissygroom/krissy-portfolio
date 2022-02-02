@@ -2,6 +2,7 @@
 .contact {
     background-color: var(--main-green);
     min-height: 90vh;
+    min-width: 0;
     flex-direction: column;
     justify-content: center;
     gap: 9.6rem;
