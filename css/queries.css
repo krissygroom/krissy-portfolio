@@ -236,14 +236,12 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 /* LESS THAN 960px (Tablets) */
 @media (max-width: 60em) {
 
-
-    /* Adding overflow makes sticky nav not work so need to add height*/
     body {
         overflow-x: hidden;
         height: 100vh;
     }
 
-    /* mobile navigation - using component from Omnifood course project */
+    /**** mobile navigation ****/
     .btn-mobile-nav {
         display: block;
         z-index: 99999;
@@ -261,7 +259,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
         z-index: 9999;
     
-        /* move all the way to right so you can't see the div until it's clicked */
         transform: translateX(100%);
 
         display: flex;
@@ -271,27 +268,18 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
         transition: all 0.5s;
 
-        /* Hide navigation */
-        /* allows no transitions: */
-        /* display: none; */
-
-        /* 1) Hide element visually */
+        /* Hide navigation with transition */
         opacity: 0;
-
-        /* 2) Make it inaccessible to keyboard or mouse */
         pointer-events: none;
-
-        /* 3) Hide from screen readers */
         visibility: hidden;
     }
 
-    /* Nav is open */
+    /* Open nav */
     .nav-open .main-nav {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
 
-        /* move all the way to left*/
         transform: translateX(0);
     }
 

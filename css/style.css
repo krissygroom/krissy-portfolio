@@ -70,11 +70,6 @@
 /******* PROJECTS COLUMN *******/
 /*******************************/
 
-/* projects title hidden until mobile size screens */
-.title-projects {
-    display: none;
-}
-
 .projects-col {
     flex-direction: column;
 }
@@ -88,8 +83,6 @@
 .project {
     height: 80vh;
     overflow: hidden;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
 }
 
 .project-container {
@@ -97,8 +90,7 @@
     justify-content: center;
     gap: 1.2rem;
     height: 100%;
-    /* position so X is in upper rt corner when
-    description is open */
+    /* position relative to X when description is open */
     position: relative;
 }
 
@@ -138,7 +130,6 @@
     cursor: pointer;
     font-family: 'Festive', cursive;
 
-    /* animate link and hover states */
     transition: all .2s;
 }
 
@@ -221,7 +212,6 @@
     overflow: hidden;
 }
 
-/* stop scrolling (add to body when .description is open) */
 .no-scroll {
     overflow-y: hidden;
 }
@@ -270,21 +260,25 @@
 
 .project-1 .desc-img-box {
     background-image: url("../img/github.png");
-    /* background-position: top-left; */
 }
+
 .project-2 .desc-img-box {
     background-image: url("../img/unplugged.png");
 }
+
 .project-3 .desc-img-box {
     background-image: url("../img/sticky-note.png");
     background-position: left;
 }
+
 .project-4 .desc-img-box {
     background-image: url("../img/guess.png");
 }
+
 .project-5 .desc-img-box {
     background-image: url("../img/joke.png");
 }
+
 .project-6 .desc-img-box {
     background-image: url("../img/omnifood.png");
 }

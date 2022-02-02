@@ -28,7 +28,7 @@ const obs = new IntersectionObserver(
         };
 }, 
 {
-    // start by observing root (window) in the viewport 
+    // observe root (window) in the viewport 
     root: null,
     // event (footer shows) happens  when all of the last project is in view
     threshold: 0.5,
@@ -65,7 +65,7 @@ const closeDescription = (element, closeBtn, projDesc, projectBox) => {
 
 // ***** Events *****
 
-// Click event on description in project  - add try catch block
+// Click event on description in project
 projects.addEventListener('click', function(e) {
     const desc = e.target;
     const currentNode = desc.parentNode.parentNode;

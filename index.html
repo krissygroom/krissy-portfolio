@@ -1,395 +1,593 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Krissy Carr Groom Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Krissy Carr Groom Portfolio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <link rel="icon" href="favicon.ico" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
-  <link rel="icon" href="favicon.ico"/>
+    <!-- Load fonts prior to rending web page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Load fonts prior to rending web page -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
-  <!-- CSS Styles -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/queries.css">
+    <!-- Animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Animation on scroll -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- Ion Icon -->
-  <script
-  type="module"
-  src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js">
-  </script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js">
-  </script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <body>
+    <!-- Header Section -->
+    <header class="header flex flex--center">
+      <a href="#">
+        <p class="logo">krissy carr groom</p>
+      </a>
 
-<body>
+      <nav class="main-nav">
+        <ul class="main-nav-list heading--tertiary flex flex--center">
+          <li><a class="main-nav-link selected-page" href="#">Portfolio</a></li>
+          <li><a class="main-nav-link" href="./about.html">About</a></li>
+          <li><a class="main-nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-  <!-- Header Section -->
-  <header class="header flex flex--center">
-    <a href="#">
-      <p class="logo">krissy carr groom</p>
-    </a>
+      <!-- Nav for tablet/mobile -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
 
-    <nav class="main-nav">
-      <ul class="main-nav-list heading--tertiary flex flex--center">
-        <li><a class="main-nav-link selected-page" href="#">Portfolio</a></li>
-        <li><a class="main-nav-link" href="./about.html">About</a></li>
-        <li><a class="main-nav-link" href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- MAIN PORTFOLIO SECTION -->
+    <main>
+      <section class="main-section">
+        <div class="home-page grid grid--2-cols">
+          <!-- Intro & Image Column -->
+          <section class="intro-col flex">
+            <img
+              class="intro-img"
+              src="img/GroomGirlsEncinitas-min.jpg"
+              alt="Krissy Family Picture"
+            />
 
-    <!-- Nav for tablet/mobile -->
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
+            <div class="container-intro flex">
+              <h1
+                class="heading heading--primary margin-bottom-med"
+                data-aos="fade-right"
+              >
+                A little bit about me
+              </h1>
 
-  </header>
+              <div class="intro-text">
+                <p class="intro-p">
+                  Hi! I'm <span class="color-pink name">Krissy</span> - a
+                  <span class="color-pink">Front End Developer</span> with a
+                  background in Data Science and AI. I'm most passionate about
+                  <span class="color-pink">beautiful design</span>,
+                  <span class="color-pink">responsibile tech</span>, &
+                  <span class="color-pink">UX/HX</span>.
+                </p>
 
-  <!-- MAIN PORTFOLIO SECTION -->
-  <main>
-    <section class="main-section">
-      <div class="home-page grid grid--2-cols">
-
-        <!-- Intro & Image Column -->
-        <section class="intro-col flex">
-
-          <img class="intro-img" src="img/GroomGirlsEncinitas-min.jpg" alt="Krissy Family Picture">
-      
-          <div class="container-intro flex">
-            <h1 class="heading heading--primary margin-bottom-med" data-aos="fade-right">A little bit about me</h1>
-
-            <div class="intro-text">
-              <p class="intro-p">Hi!  I'm <span class="color-pink name">Krissy</span> - a <span class="color-pink">Front End Developer</span> with a background in Data Science and AI.  I'm most passionate about <span class="color-pink">beautiful design</span>, <span class="color-pink">responsibile tech</span>, & <span class="color-pink">UX/HX</span>.</p>  
-              
-              <ul class="social-links flex">
-                <li><a class="social-link" href="https://github.com/krissygroom" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-github"></ion-icon></a></li>
-                <li><a class="social-link" href="https://www.linkedin.com/in/krissydgroom/" target="_blank" rel="noopener"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
-              </ul>
-            </div>
-          </div>
-
-        </section>
-           
-        <!-- Projects Column -->
-        <section class="projects-col flex">
-
-          <div class="project project-1">
-            <div class="project-container flex flex--center">
-
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
-
-              <!-- Description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="GitHub Repo Gallery">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">GitHub Repo Gallery</h2>
-                  <p class="description-par">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.
-                  </p>
-                  <p class="skills"><span>Skills: </span>Vanilla JavaScript, APIs, Manipulate the DOM, Responsive Design</p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, VS Code, Command Line, Chrome DevTools</p>
-
-                  <div class="buttons flex">
-                    <a href="https://krissygroom.github.io/github-repo-gallery" target="_blank" class="btn btn--full">Live Site</a>
-                    <button class="btn btn--outline back">Back to Portfolio &rarr;</button>
-                  </div>
-
-                </div>
-              </figure>
-
-              <div class="project-box flex flex--center">
-                <a class="img-anchor" href="https://krissygroom.github.io/github-repo-gallery/" target="_blank"><img class="project-img" src="img/github-phone.png" alt="Github Repo Gallery"/></a>  
-                
-                <h2 class="desc">Description &rarr;</h2> 
-                <div class="skills-used">
-                  <p>HTML5, CSS3, JavaScript, APIs, Responsive Design</p>
-                </div>
-              </div>
-            </div>                
-          </div>
-
-          <div class="project project-2">
-            <div class="project-container flex flex--center">
-
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
-
-              <!-- description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="Unplugged Retreat Website">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">Unplugged Retreat Website</h2>
-                  <p class="description-par">Nature retreat 3-page responsive website developed from a design comp that adapts to mobile, tablet, & desktop screens.
-                  </p>
-                  <p class="skills"><span>Skills: </span>HTML5, CSS3, Flexbox, Media Queries, Responsive Design</p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, Command Line, Photoshop, VS Code, Chrome DevTools</p>
-
-                  <div class="buttons flex">
-                    <a href="https://krissygroom.github.io/unplugged-retreat/index.html" target="_blank" class="btn btn--full">Live Site</a>
-                    <button class="btn btn--outline back">Back to Portfolio &rarr;</button>
-                  </div>
-
-                </div>
-              </figure>
-
-              <div class="project-box flex flex--center">
-                <a class="img-anchor" href="https://krissygroom.github.io/unplugged-retreat/index.html" target="_blank">
-                  <img class="project-img" src="img/unplugged-phone.png" alt="Unplugged Retreat">
-                </a>
-                <h2 class="desc">Description &rarr;</h2>
-                <div class="skills-used">
-                  <p>HTML5, CSS3, Flexbox, Media Queries, Responsive Design</p>
-                </div>
+                <ul class="social-links flex">
+                  <li>
+                    <a
+                      class="social-link"
+                      href="https://github.com/krissygroom"
+                      target="_blank"
+                      rel="noopener"
+                      ><ion-icon
+                        class="social-icon"
+                        name="logo-github"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="social-link"
+                      href="https://www.linkedin.com/in/krissydgroom/"
+                      target="_blank"
+                      rel="noopener"
+                      ><ion-icon
+                        class="social-icon"
+                        name="logo-linkedin"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="project project-3">
-            <div class="project-container flex flex--center">
+          <!-- Projects Column -->
+          <section class="projects-col flex">
+            <div class="project project-1">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
 
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
+                <!-- Description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="GitHub Repo Gallery"
+                  ></div>
 
-              <!-- description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="Sticky Notes React App">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">Sticky Notes React App</h2>
-                  <p class="description-par">React interactive app that lets users create “sticky notes” on their computer to keep track of to-do items.  It allows users to create notes, search available notes, and delete notes.
-                  </p>
-                  <p class="skills"><span>Skills: </span>HTML5, CSS3, ES6, React, JSX, Managing Data Flow, Manipulate the DOM</p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, CodeSandbox, VS Code, NPM/Node for local development, Command Line, Chrome DevTools</p>
-
-                  <div class="buttons flex">
-                    <a href="https://codesandbox.io/s/l12-build-your-big-component-v8-v3ebg?file=/src/App.js" target="_blank" class="btn btn--full">Live Site</a>
-                    <button class="btn btn--outline back">Back to Portfolio &rarr;</button>
-                  </div>
-
-                </div>
-              </figure>
-
-              <div class="project-box flex flex--center">
-                <a class="img-anchor" href="https://codesandbox.io/s/l12-build-your-big-component-v8-v3ebg?file=/src/App.js" target="_blank">
-                  <img class="project-img" src="img/sticky-note-phone.png" alt="Super Sticky Note JS">
-                </a>
-                <h2 class="desc desc--pink">Description &rarr;</h2>
-                <div class="skills-used">
-                  <p class="pink-background">HTML5, CSS3, ES6, React, JSX, Managing Data Flow, Manipulate the DOM</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project project-4">
-            <div class="project-container flex flex--center">
-
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
-
-              <!-- description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="Guess The Word App">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">Guess The Word App</h2>
-                  <p class="description-par">Allows players to guess an API retrieved word by entering one letter at a time. Players win If they guess all the letters correctly before they use up their allotted guesses. Users can choose to play again or end the game after each turn.
-                  </p>
-                  <p class="skills"><span>Skills: </span>HTML5, CSS3, Vanilla JavaScript, Manipulate the DOM, APIs</p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, VS Code, Command Line, Chrome DevTools</p>
-
-                  <div class="buttons flex">
-                    <a href="https://krissygroom.github.io/guess-the-word/" target="_blank" class="btn btn--full">Live Site</a>
-                    <button class="btn btn--outline back">Back to Portfolio &rarr;</button>
-                  </div>
-
-                </div>
-              </figure>
-
-              <div class="project-box flex flex--center"> 
-                <a class="img-anchor" href="https://krissygroom.github.io/guess-the-word/" target="_blank">
-                  <img class="project-img" src="img/guess-phone.png" alt="Guess The Word Game">
-                </a>
-                <h2 class="desc">Description &rarr;</h2>
-                <div class="skills-used">
-                  <p>HTML5, CSS3, Vanilla JavaScript, Manipulate the DOM, APIs</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project project-5">
-            <div class="project-container flex flex--center">
-
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
-
-              <!-- description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="Joke Teller App">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">Joke Teller App</h2>
-                  <p class="description-par">Uses joke and audio APIs to play a random programmer joke each time the 'Tell me a joke' button is pressed.
-                  </p>
-                  <p class="skills"><span>Skills: </span>HTML5, CSS3, Vanilla JavaScript, APIs</p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, VS Code, Command Line, Chrome DevTools</p>
-
-                  <div class="buttons flex">
-                    <a href="https://krissygroom.github.io/joke-teller/" target="_blank" class="btn btn--full">Live Site</a>
-                    <button class="btn btn--outline back">Back to Portfolio &rarr;</button>
-                  </div>
-
-                </div>
-              </figure>
-
-              <div class="project-box flex flex--center">
-                <a class="img-anchor" href="https://krissygroom.github.io/joke-teller/" target="_blank">
-                  <img class="project-img" src="img/joke-api.png" alt="Joke Teller Audio API">
-                </a>
-                <h2 class="desc desc--pink">Description &rarr;</h2>
-                <div class="skills-used">
-                  <p class="pink-background">HTML5, CSS3, Vanilla JavaScript, APIs</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project project-6" id="last-project">
-            <div class="project-container flex flex--center">
-
-              <!-- X when description is opened -->
-              <button class="btn-close hidden">
-                <ion-icon class="icon-close" name="close-outline"></ion-icon>
-              </button>
-
-              <!-- description of project section -->
-              <figure class="project-description grid hidden">
-                <div
-                  class="desc-img-box"
-                  role="img"
-                  aria-label="Omnifood Meal Delivery Website">
-                </div>
-
-                <div class="description-box flex">
-                  <h2 class="heading heading--secondary">Omnifood Meal Delivery Website</h2>
-                  <p class="description-par">Healthy food delivery service website that offers custom healthy meal plans developed using visual design principles, responsive design, and well-organized and readable HTML & CSS code.
-                  </p>
-                  <p class="skills"><span>Skills: </span>HTML5, CSS3, Flexbox, CSS Grid, Responsive Design, Media Queries, Visual Design Principles
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">
+                      GitHub Repo Gallery
+                    </h2>
+                    <p class="description-par">
+                      Uses GitHub's API to pull data from my GitHub portfolio to
+                      create a gallery of repos. Visitors to the site can click
+                      on the repos to see more details and a link to the repo.
                     </p>
-                  <p class="tools"><span>Tools: </span>Git/GitHub, Command Line, VS Code, Ionicon, Coolor contrast checker, Caniuse.com, Chrome Developer Tools, Lighthouse for performance analysis
+                    <p class="skills">
+                      <span>Skills: </span>Vanilla JavaScript, APIs, Manipulate
+                      the DOM, Responsive Design
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, VS Code, Command Line,
+                      Chrome DevTools
                     </p>
 
-                  <div class="buttons flex">
-                    <a href="https://krissygroom.github.io/omnifood-course-project/" target="_blank" class="live-site btn btn--full">Live Site</a>
-                    <button class="back btn btn--outline">Back to Portfolio &rarr;</button>
+                    <div class="buttons flex">
+                      <a
+                        href="https://krissygroom.github.io/github-repo-gallery"
+                        target="_blank"
+                        class="btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="btn btn--outline back">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
                   </div>
+                </figure>
 
-                </div>
-              </figure>
-              
-              <div class="project-box flex flex--center">
-                <a class="img-anchor" href="https://krissygroom.github.io/omnifood-course-project/" target="_blank">
-                  <img class="project-img" src="img/omnifood-phone.png" alt="Omnifood Healthy Food Delivery">
-                </a>
-                <h2 class="desc">Description &rarr;</h2>
-                <div class="skills-used">
-                  <p>HTML5, CSS3, Flexbox, CSS Grid, Vanilla JavaScript, Responsive Design, Media Queries, Visual Design Principles</p>
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://krissygroom.github.io/github-repo-gallery/"
+                    target="_blank"
+                    ><img
+                      class="project-img"
+                      src="img/github-phone.png"
+                      alt="Github Repo Gallery"
+                  /></a>
+
+                  <h2 class="desc">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p>HTML5, CSS3, JavaScript, APIs, Responsive Design</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+            <div class="project project-2">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
 
-        </section>
-      </div>
+                <!-- description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="Unplugged Retreat Website"
+                  ></div>
 
-    </section>
-  </main>
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">
+                      Unplugged Retreat Website
+                    </h2>
+                    <p class="description-par">
+                      Nature retreat 3-page responsive website developed from a
+                      design comp that adapts to mobile, tablet, & desktop
+                      screens.
+                    </p>
+                    <p class="skills">
+                      <span>Skills: </span>HTML5, CSS3, Flexbox, Media Queries,
+                      Responsive Design
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, Command Line, Photoshop,
+                      VS Code, Chrome DevTools
+                    </p>
 
-  <!-- FOOTER -->
-  <footer class="footer hidden">
-    <p class="copyright">
-      &copy; <span class="year">2027</span> by Krissy.<ion-icon name="heart-outline"></ion-icon>  All rights reserved.
-    </p>
-  </footer>
+                    <div class="buttons flex">
+                      <a
+                        href="https://krissygroom.github.io/unplugged-retreat/index.html"
+                        target="_blank"
+                        class="btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="btn btn--outline back">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </figure>
 
-  <!-- JavaScript -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/mobile-nav.js"></script>
-  <script src="js/footer.js"></script>
-  
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://krissygroom.github.io/unplugged-retreat/index.html"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-img"
+                      src="img/unplugged-phone.png"
+                      alt="Unplugged Retreat"
+                    />
+                  </a>
+                  <h2 class="desc">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p>
+                      HTML5, CSS3, Flexbox, Media Queries, Responsive Design
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+            <div class="project project-3">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
 
+                <!-- description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="Sticky Notes React App"
+                  ></div>
+
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">
+                      Sticky Notes React App
+                    </h2>
+                    <p class="description-par">
+                      React interactive app that lets users create “sticky
+                      notes” on their computer to keep track of to-do items. It
+                      allows users to create notes, search available notes, and
+                      delete notes.
+                    </p>
+                    <p class="skills">
+                      <span>Skills: </span>HTML5, CSS3, ES6, React, JSX,
+                      Managing Data Flow, Manipulate the DOM
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, CodeSandbox, VS Code,
+                      NPM/Node for local development, Command Line, Chrome
+                      DevTools
+                    </p>
+
+                    <div class="buttons flex">
+                      <a
+                        href="https://codesandbox.io/s/l12-build-your-big-component-v8-v3ebg?file=/src/App.js"
+                        target="_blank"
+                        class="btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="btn btn--outline back">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </figure>
+
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://codesandbox.io/s/l12-build-your-big-component-v8-v3ebg?file=/src/App.js"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-img"
+                      src="img/sticky-note-phone.png"
+                      alt="Super Sticky Note JS"
+                    />
+                  </a>
+                  <h2 class="desc desc--pink">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p class="pink-background">
+                      HTML5, CSS3, ES6, React, JSX, Managing Data Flow,
+                      Manipulate the DOM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-4">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
+
+                <!-- description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="Guess The Word App"
+                  ></div>
+
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">
+                      Guess The Word App
+                    </h2>
+                    <p class="description-par">
+                      Allows players to guess an API retrieved word by entering
+                      one letter at a time. Players win If they guess all the
+                      letters correctly before they use up their allotted
+                      guesses. Users can choose to play again or end the game
+                      after each turn.
+                    </p>
+                    <p class="skills">
+                      <span>Skills: </span>HTML5, CSS3, Vanilla JavaScript,
+                      Manipulate the DOM, APIs
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, VS Code, Command Line,
+                      Chrome DevTools
+                    </p>
+
+                    <div class="buttons flex">
+                      <a
+                        href="https://krissygroom.github.io/guess-the-word/"
+                        target="_blank"
+                        class="btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="btn btn--outline back">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </figure>
+
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://krissygroom.github.io/guess-the-word/"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-img"
+                      src="img/guess-phone.png"
+                      alt="Guess The Word Game"
+                    />
+                  </a>
+                  <h2 class="desc">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p>
+                      HTML5, CSS3, Vanilla JavaScript, Manipulate the DOM, APIs
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-5">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
+
+                <!-- description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="Joke Teller App"
+                  ></div>
+
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">Joke Teller App</h2>
+                    <p class="description-par">
+                      Uses joke and audio APIs to play a random programmer joke
+                      each time the 'Tell me a joke' button is pressed.
+                    </p>
+                    <p class="skills">
+                      <span>Skills: </span>HTML5, CSS3, Vanilla JavaScript, APIs
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, VS Code, Command Line,
+                      Chrome DevTools
+                    </p>
+
+                    <div class="buttons flex">
+                      <a
+                        href="https://krissygroom.github.io/joke-teller/"
+                        target="_blank"
+                        class="btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="btn btn--outline back">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </figure>
+
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://krissygroom.github.io/joke-teller/"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-img"
+                      src="img/joke-api.png"
+                      alt="Joke Teller Audio API"
+                    />
+                  </a>
+                  <h2 class="desc desc--pink">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p class="pink-background">
+                      HTML5, CSS3, Vanilla JavaScript, APIs
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-6" id="last-project">
+              <div class="project-container flex flex--center">
+                <!-- X when description is opened -->
+                <button class="btn-close hidden">
+                  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+                </button>
+
+                <!-- description of project section -->
+                <figure class="project-description grid hidden">
+                  <div
+                    class="desc-img-box"
+                    role="img"
+                    aria-label="Omnifood Meal Delivery Website"
+                  ></div>
+
+                  <div class="description-box flex">
+                    <h2 class="heading heading--secondary">
+                      Omnifood Meal Delivery Website
+                    </h2>
+                    <p class="description-par">
+                      Healthy food delivery service website that offers custom
+                      healthy meal plans developed using visual design
+                      principles, responsive design, and well-organized and
+                      readable HTML & CSS code.
+                    </p>
+                    <p class="skills">
+                      <span>Skills: </span>HTML5, CSS3, Flexbox, CSS Grid,
+                      Responsive Design, Media Queries, Visual Design Principles
+                    </p>
+                    <p class="tools">
+                      <span>Tools: </span>Git/GitHub, Command Line, VS Code,
+                      Ionicon, Coolor contrast checker, Caniuse.com, Chrome
+                      Developer Tools, Lighthouse for performance analysis
+                    </p>
+
+                    <div class="buttons flex">
+                      <a
+                        href="https://krissygroom.github.io/omnifood-course-project/"
+                        target="_blank"
+                        class="live-site btn btn--full"
+                        >Live Site</a
+                      >
+                      <button class="back btn btn--outline">
+                        Back to Portfolio &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </figure>
+
+                <div class="project-box flex flex--center">
+                  <a
+                    class="img-anchor"
+                    href="https://krissygroom.github.io/omnifood-course-project/"
+                    target="_blank"
+                  >
+                    <img
+                      class="project-img"
+                      src="img/omnifood-phone.png"
+                      alt="Omnifood Healthy Food Delivery"
+                    />
+                  </a>
+                  <h2 class="desc">Description &rarr;</h2>
+                  <div class="skills-used">
+                    <p>
+                      HTML5, CSS3, Flexbox, CSS Grid, Vanilla JavaScript,
+                      Responsive Design, Media Queries, Visual Design Principles
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer hidden">
+      <p class="copyright">
+        &copy; <span class="year">2027</span> by Krissy.<ion-icon
+          name="heart-outline"
+        ></ion-icon>
+        All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/footer.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
