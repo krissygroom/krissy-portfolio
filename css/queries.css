@@ -275,6 +275,10 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         visibility: hidden;
     }
 
+    .main-nav-link {
+        margin-bottom: 2rem;
+    }
+
     /* Open nav */
     .nav-open .main-nav {
         opacity: 1;
@@ -571,11 +575,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .container-lg {
         margin: 4.8rem 2.4rem;
       }
-/* 
-    .my-skills,
-    .my-tools {
-        gap: 2.4rem;
-    } */
 
 }
 
@@ -608,11 +607,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .about-text-p {
         padding: 0;
     }
-
-    /* .my-skills,
-    .my-tools {
-        width: 100%;
-    } */
 
     /* CONTACT PAGE */
 
