@@ -183,10 +183,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
     /* HOME PAGE */
 
-    .skills-used {
-        width: 115%;
-    }
-
     /* ABOUT PAGE */
     .container-lg {
         margin: 4.8rem 10.8rem;
@@ -220,6 +216,11 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
     .project-box {
         width: 28%;
+    }
+
+    .project-img {
+        filter: none;
+        opacity: 1;
     }
 
     /* ABOUT PAGE */
@@ -362,8 +363,12 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         width: 18%;
     }
 
+    .desc {
+        width: 150%;
+    }
+
     .skills-used {
-        width: 130%;
+        width: 140%;
     }
 
     .skills-used p {

@@ -96,13 +96,15 @@
 
 .project-box {
     flex-direction: column;
-    width: 20%;
+    gap: 1.2rem;
+    width: 22%;
+    padding: 1rem;
 }
 
 .project-img {
     width: 100%;
     filter: grayscale(100%);
-    opacity: 0.5;
+    opacity: 0.6;
     transition: all 0.2s;
     margin: 0;
 }
@@ -121,9 +123,12 @@
 .desc {
     display: inline-block;
     text-decoration: none;
-    font-size: 3.2rem; 
-    font-weight: 500;
-    color: var(--main-gold);
+    font-size: 3.6rem; 
+    font-weight: 600;
+    color: var(--main-gold-light);
+    padding: .8rem;
+    width: 150%;
+    text-align: center;
     text-transform: lowercase;
     letter-spacing: 0.1rem;
 
@@ -134,7 +139,7 @@
 }
 
 .desc:hover {
-    border-bottom: 1px solid var(--main-gold);
+    text-decoration: underline;
     transform: scale(1.1);
 }
 
@@ -142,40 +147,36 @@
     color: var(--main-pink);
 }
 
-.desc.desc--pink:hover {
-    border-bottom: 1px solid var(--main-pink);
+.skills-used {
+    width: 120%;
 }
 
 .skills-used p {
-    background-color: rgba(255, 197, 88, 0.2);
+    background-color: var(--main-gold); 
     border-radius: 11px;
     padding: 1.2rem;
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
-    color: rgba(38, 38, 39, 0.4);
     width: 100%;
     margin: 0 auto;
     font-style: italic;
     margin-top: 1.2rem;
+    opacity: 0.5;
 
     transition: all .4s;
 }
 
 .skills-used p:hover {
-    background-color: var(--main-gold);  
-    color: #262627; 
+    opacity: 1; 
 }
 
 .skills-used .pink-background {
-    background-color: rgba(184, 57, 121, 0.2);
-}
-
-.skills-used .pink-background:hover {
     background-color: var(--main-pink);
+    opacity: 0.5;
     color: #fff;
-}
 
+}
 
 .project-1 {
     background-color: var(--main-blue);
