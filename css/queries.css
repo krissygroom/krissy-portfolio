@@ -571,13 +571,11 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     .container-lg {
         margin: 4.8rem 2.4rem;
       }
-
+/* 
     .my-skills,
     .my-tools {
-        grid-template-columns: 1fr;
-        width: 70%;
         gap: 2.4rem;
-    }
+    } */
 
 }
 
@@ -611,10 +609,10 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
         padding: 0;
     }
 
-    .my-skills,
+    /* .my-skills,
     .my-tools {
-        width: 80%;
-    }
+        width: 100%;
+    } */
 
     /* CONTACT PAGE */
 
