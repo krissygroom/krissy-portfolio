@@ -287,7 +287,6 @@
 .description-box {
     flex-direction: column;
     justify-content: center;
-    gap: 2.8rem;
     padding: 4.8rem;
 }
 
@@ -298,6 +297,11 @@
     letter-spacing: .1rem;
 }
 
+.description-box h2,
+.description-box p {
+    margin-bottom: 2.4rem;
+}
+
 .skills,
 .tools {
     font-size: 1.4rem;
@@ -305,8 +309,12 @@
 
 
 .buttons {
-    margin-top: 1.8rem;
-    gap: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.buttons a,
+.buttons .back {
+    margin: 0 1.8rem 1.8rem 0;
 }
 
 
