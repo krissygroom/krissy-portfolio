@@ -518,12 +518,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
 /* LESS THAN 544 (Phones) */
 @media (max-width: 34em) {
-
-    html {
-        /* 8px / 16px */
-        font-size: 45%;
-    }
-
     /* HEADER */
     .header {
         padding: 0.5rem 2.4rem;
