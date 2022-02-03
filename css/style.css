@@ -169,6 +169,7 @@
 
 .skills-used p:hover {
     opacity: 1; 
+    transform: scale(1.2);
 }
 
 .skills-used .pink-background {
