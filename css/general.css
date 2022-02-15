@@ -141,6 +141,7 @@ body::-webkit-scrollbar {
 
 .main-nav-link {
   display: inline-block;
+  border-bottom: 2px solid transparent;
   color: #262627;
 }
 
