@@ -2,10 +2,6 @@
 // Projects section to access description
 const projects = document.querySelector(".projects-col");
 
-// Access body & html to stop scrolling behavior
-const body = document.querySelector("body");
-const html = document.querySelector("html");
-
 // View footer when last project is scrolled to
 const footer = document.querySelector(".footer");
 const lastProject = document.getElementById("last-project");
