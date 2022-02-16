@@ -50,7 +50,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   }
 
   .project-box {
-    width: 15%;
+    width: 20%;
   }
 
   .desc {
@@ -63,6 +63,15 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
 
   .description-box .heading--secondary {
     font-size: 4.2rem;
+  }
+
+  .buttons a,
+  .buttons .back {
+    width: 35%;
+  }
+
+  .buttons a {
+    margin-bottom: 2.8rem;
   }
 
   /********* ABOUT PAGE *********/
@@ -114,7 +123,7 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   }
 
   .project-box {
-    width: 13%;
+    width: 15%;
   }
 
   /* ABOUT PAGE */
@@ -146,9 +155,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     margin: 1.6rem 0;
   }
 
-  .project-description {
+  .description-box {
     width: 70%;
-    height: 65%;
+    height: 70%;
+  }
+
+  .buttons a,
+  .buttons .back {
+    width: 50%;
   }
 
   /* ABOUT PAGE */
@@ -215,6 +229,11 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   .project-img {
     filter: none;
     opacity: 1;
+  }
+
+  .buttons a,
+  .buttons .back {
+    width: 65%;
   }
 
   /* ABOUT PAGE */
@@ -360,23 +379,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   }
 
   /* Description section */
-  .project-description {
-    grid-template-columns: 40% 1fr;
-    width: 80%;
-  }
 
-  .project-description .buttons {
-    flex-direction: column;
+  .description-box {
+    padding: 3.2rem;
   }
 
   .buttons a,
   .buttons .back {
-    width: 75%;
-    text-align: center;
-  }
-
-  .description-box {
-    padding: 2.4rem;
+    width: 50%;
   }
 
   /* ABOUT PAGE */
@@ -426,10 +436,6 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     width: 25%;
   }
 
-  .project-description {
-    height: 80%;
-  }
-
   /* ABOUT PAGE */
 
   .hero-heading {
@@ -456,35 +462,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   .intro-img {
     width: 75%;
   }
+
   .project-box {
     width: 30%;
   }
 
-  /* Description section*/
-  .project-description {
-    grid-template-columns: 1fr;
-    height: 70%;
-
-    padding: 3.6rem;
-  }
-
-  .desc-img-box {
-    display: none;
-  }
-
-  .description-box {
-    padding: 0;
-  }
-
-  .project-description .buttons {
-    flex-direction: row;
-    gap: 2.8rem;
-  }
-
   .buttons a,
   .buttons .back {
-    width: auto;
-    text-align: center;
+    width: 65%;
   }
 
   /* CONTACT PAGE */
@@ -525,13 +510,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
   .intro-text {
     width: 85%;
   }
+
   .project-box {
     width: 40%;
   }
 
-  /* Description Section */
-  .project-description .buttons {
-    gap: 1.6rem;
+  .buttons a,
+  .buttons .back {
+    width: 75%;
   }
 
   /* ABOUT PAGE */
@@ -572,13 +558,14 @@ https://css-tricks.com/optimizing-large-scale-displays/ */
     width: 170%;
   }
 
-  /* Description section*/
-  .project-description {
-    height: 80%;
+  .description-box {
+    height: 90%;
+    width: 90%;
   }
-  .project-description .buttons {
-    flex-direction: column;
-    gap: 2.4rem;
+
+  .buttons a,
+  .buttons .back {
+    width: 90%;
   }
 
   /* ABOUT PAGE */

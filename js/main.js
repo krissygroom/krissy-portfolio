@@ -35,38 +35,15 @@ const obs = new IntersectionObserver(
 obs.observe(lastProject);
 
 // Open Description
-const openDescription = (element, closeBtn, projDesc, projectBox) => {
-  element.classList.add("description");
-  element.classList.add("full-vh");
-  body.classList.add("no-scroll");
-  html.classList.add("no-scroll");
-  element.scrollIntoView({ block: "center" });
+const openDescription = (projDesc, projectBox) => {
   projectBox.classList.add("hidden");
-  closeBtn.classList.remove("hidden");
-  projDesc.classList.remove("hidden");
-};
-
-const toggleDescription = (element, closeBtn, projDesc, projectBox) => {
-  element.classList.toggle("description");
-  element.classList.toggle("full-vh");
-  body.classList.toggle("no-scroll");
-  html.classList.toggle("no-scroll");
-  element.scrollIntoView({ block: "center" });
-  projectBox.classList.toggle("hidden");
-  closeBtn.classList.toggle("hidden");
-  projDesc.classList.toggle("hidden");
+  projDesc.classList.add("open-description");
 };
 
 // Close Description
-const closeDescription = (element, closeBtn, projDesc, projectBox) => {
-  element.classList.remove("description");
-  element.classList.remove("full-vh");
-  closeBtn.classList.add("hidden");
+const closeDescription = (projDesc, projectBox) => {
   projectBox.classList.remove("hidden");
-  projDesc.classList.add("hidden");
-  element.scrollIntoView({ block: "center" });
-  body.classList.remove("no-scroll");
-  html.classList.remove("no-scroll");
+  projDesc.classList.remove("open-description");
 };
 
 // ***** Events *****
@@ -77,27 +54,18 @@ projects.addEventListener("click", function (e) {
   const currentNode = desc.parentNode.parentNode;
 
   if (desc.matches("h2")) {
-    // get elements to toggle
-    const closeButton = currentNode.querySelector(".btn-close");
+    // get elements to toggle off and on
     const projectDesc = currentNode.querySelector(".project-description");
     const projectBox = currentNode.querySelector(".project-box");
     // Back to portfolio button
     const backBtn = currentNode.querySelector(".back");
 
     // If user clicks on "description ->", open description section
-    // openDescription(currentNode, closeButton, projectDesc, projectBox);
-    toggleDescription(currentNode, closeButton, projectDesc, projectBox);
+    openDescription(projectDesc, projectBox);
 
-    // Close description if 'back to portfolio' btn is clicked
+    // Close description if 'back to project' btn is clicked
     backBtn.addEventListener("click", function (e) {
-      //   closeDescription(currentNode, closeButton, projectDesc, projectBox);
-      toggleDescription(currentNode, closeButton, projectDesc, projectBox);
-    });
-
-    // Close description section if x is clicked
-    closeButton.addEventListener("click", function (e) {
-      //   closeDescription(currentNode, closeButton, projectDesc, projectBox);
-      toggleDescription(currentNode, closeButton, projectDesc, projectBox);
+      closeDescription(projectDesc, projectBox);
     });
   }
 });

@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
   font-size: 6.8rem;
   color: var(--main-gold-text);
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* NAVIGATION */
