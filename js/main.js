@@ -67,5 +67,20 @@ projects.addEventListener("click", function (e) {
     backBtn.addEventListener("click", function (e) {
       closeDescription(projectDesc, projectBox);
     });
+
+    // Close description box if scrolled past it
+    const obs = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+        if (ent.isIntersecting === false) {
+          closeDescription(projectDesc, projectBox);
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+      }
+    );
+    obs.observe(currentNode);
   }
 });
