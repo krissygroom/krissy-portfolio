@@ -93,7 +93,7 @@
 .project-box {
   flex-direction: column;
   gap: 1.8rem;
-  width: 22%;
+  width: 23%;
   padding: 1rem;
 }
 
@@ -183,30 +183,6 @@
 /******* PROJECTS COLUMN - DESCRIPTION LINK PRESSED *******/
 /**********************************************************/
 
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-
-  overflow: hidden;
-}
-
-.no-scroll {
-  overflow-y: hidden;
-}
-
-.full-vh {
-  height: 100vh;
-}
-
 .btn-close {
   display: inline-block;
   position: absolute;
@@ -229,51 +205,34 @@
 }
 
 .project-description {
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100vw);
   overflow: hidden;
-  width: 60%;
-  height: 60%;
-  border-radius: 11px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: all 0.5s ease-in-out;
 }
 
-.desc-img-box {
-  background-size: cover;
-  background-position: top;
-  border-right: 1px solid rgba(38, 38, 39, 0.5);
-}
-
-.project-1 .desc-img-box {
-  background-image: url("../img/github.png");
-}
-
-.project-2 .desc-img-box {
-  background-image: url("../img/unplugged.png");
-}
-
-.project-3 .desc-img-box {
-  background-image: url("../img/sticky-note.png");
-  background-position: left;
-}
-
-.project-4 .desc-img-box {
-  background-image: url("../img/guess.png");
-}
-
-.project-5 .desc-img-box {
-  background-image: url("../img/joke.png");
-}
-
-.project-6 .desc-img-box {
-  background-image: url("../img/omnifood.png");
+.open-description {
+  transform: translateX(0);
 }
 
 .description-box {
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  height: 60%;
+  width: 60%;
   flex-direction: column;
   justify-content: center;
   padding: 4.8rem;
+  opacity: 0.9;
 }
 
 .description-box span {
@@ -299,5 +258,11 @@
 
 .buttons a,
 .buttons .back {
-  margin: 0 1.8rem 1.8rem 0;
+  display: block;
+  text-align: left;
+  width: 45%;
+}
+
+.buttons a {
+  margin-bottom: 2.4rem;
 }
