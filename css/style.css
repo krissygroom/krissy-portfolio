@@ -165,7 +165,8 @@
   color: #fff;
 }
 
-.project-1 {
+.project-1,
+.project-7 {
   background-color: var(--main-blue);
 }
 .project-2,

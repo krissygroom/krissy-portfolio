@@ -34,6 +34,7 @@ obs.observe(lastProject);
 const openDescription = (projDesc, projectBox) => {
   projectBox.classList.add("hidden");
   projDesc.classList.add("open-description");
+  projDesc.classList.remove("hidden");
 };
 
 // Close Description
